@@ -1,0 +1,6 @@
+{
+  "package_name": "interface",
+  "non_idl_tuples": [
+    "/home/josh/igris_c_ws/src/interface:srv/MoveJoints.srv"
+  ]
+}
