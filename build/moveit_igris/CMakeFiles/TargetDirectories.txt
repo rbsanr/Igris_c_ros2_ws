@@ -1,0 +1,9 @@
+/home/josh/Igris_c_ros2_ws/build/moveit_igris/CMakeFiles/uninstall.dir
+/home/josh/Igris_c_ros2_ws/build/moveit_igris/CMakeFiles/moveit_igris_uninstall.dir
+/home/josh/Igris_c_ros2_ws/build/moveit_igris/CMakeFiles/test.dir
+/home/josh/Igris_c_ros2_ws/build/moveit_igris/CMakeFiles/edit_cache.dir
+/home/josh/Igris_c_ros2_ws/build/moveit_igris/CMakeFiles/rebuild_cache.dir
+/home/josh/Igris_c_ros2_ws/build/moveit_igris/CMakeFiles/list_install_components.dir
+/home/josh/Igris_c_ros2_ws/build/moveit_igris/CMakeFiles/install.dir
+/home/josh/Igris_c_ros2_ws/build/moveit_igris/CMakeFiles/install/local.dir
+/home/josh/Igris_c_ros2_ws/build/moveit_igris/CMakeFiles/install/strip.dir

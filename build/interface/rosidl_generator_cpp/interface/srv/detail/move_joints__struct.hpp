@@ -2,6 +2,9 @@
 // with input from interface:srv/MoveJoints.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "interface/srv/move_joints.hpp"
+
+
 #ifndef INTERFACE__SRV__DETAIL__MOVE_JOINTS__STRUCT_HPP_
 #define INTERFACE__SRV__DETAIL__MOVE_JOINTS__STRUCT_HPP_
 
@@ -280,6 +283,141 @@ using MoveJoints_Response =
 
 }  // namespace interface
 
+
+// Include directives for member types
+// Member 'info'
+#include "service_msgs/msg/detail/service_event_info__struct.hpp"
+
+#ifndef _WIN32
+# define DEPRECATED__interface__srv__MoveJoints_Event __attribute__((deprecated))
+#else
+# define DEPRECATED__interface__srv__MoveJoints_Event __declspec(deprecated)
+#endif
+
+namespace interface
+{
+
+namespace srv
+{
+
+// message struct
+template<class ContainerAllocator>
+struct MoveJoints_Event_
+{
+  using Type = MoveJoints_Event_<ContainerAllocator>;
+
+  explicit MoveJoints_Event_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : info(_init)
+  {
+    (void)_init;
+  }
+
+  explicit MoveJoints_Event_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : info(_alloc, _init)
+  {
+    (void)_init;
+  }
+
+  // field types and members
+  using _info_type =
+    service_msgs::msg::ServiceEventInfo_<ContainerAllocator>;
+  _info_type info;
+  using _request_type =
+    rosidl_runtime_cpp::BoundedVector<interface::srv::MoveJoints_Request_<ContainerAllocator>, 1, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<interface::srv::MoveJoints_Request_<ContainerAllocator>>>;
+  _request_type request;
+  using _response_type =
+    rosidl_runtime_cpp::BoundedVector<interface::srv::MoveJoints_Response_<ContainerAllocator>, 1, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<interface::srv::MoveJoints_Response_<ContainerAllocator>>>;
+  _response_type response;
+
+  // setters for named parameter idiom
+  Type & set__info(
+    const service_msgs::msg::ServiceEventInfo_<ContainerAllocator> & _arg)
+  {
+    this->info = _arg;
+    return *this;
+  }
+  Type & set__request(
+    const rosidl_runtime_cpp::BoundedVector<interface::srv::MoveJoints_Request_<ContainerAllocator>, 1, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<interface::srv::MoveJoints_Request_<ContainerAllocator>>> & _arg)
+  {
+    this->request = _arg;
+    return *this;
+  }
+  Type & set__response(
+    const rosidl_runtime_cpp::BoundedVector<interface::srv::MoveJoints_Response_<ContainerAllocator>, 1, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<interface::srv::MoveJoints_Response_<ContainerAllocator>>> & _arg)
+  {
+    this->response = _arg;
+    return *this;
+  }
+
+  // constant declarations
+
+  // pointer types
+  using RawPtr =
+    interface::srv::MoveJoints_Event_<ContainerAllocator> *;
+  using ConstRawPtr =
+    const interface::srv::MoveJoints_Event_<ContainerAllocator> *;
+  using SharedPtr =
+    std::shared_ptr<interface::srv::MoveJoints_Event_<ContainerAllocator>>;
+  using ConstSharedPtr =
+    std::shared_ptr<interface::srv::MoveJoints_Event_<ContainerAllocator> const>;
+
+  template<typename Deleter = std::default_delete<
+      interface::srv::MoveJoints_Event_<ContainerAllocator>>>
+  using UniquePtrWithDeleter =
+    std::unique_ptr<interface::srv::MoveJoints_Event_<ContainerAllocator>, Deleter>;
+
+  using UniquePtr = UniquePtrWithDeleter<>;
+
+  template<typename Deleter = std::default_delete<
+      interface::srv::MoveJoints_Event_<ContainerAllocator>>>
+  using ConstUniquePtrWithDeleter =
+    std::unique_ptr<interface::srv::MoveJoints_Event_<ContainerAllocator> const, Deleter>;
+  using ConstUniquePtr = ConstUniquePtrWithDeleter<>;
+
+  using WeakPtr =
+    std::weak_ptr<interface::srv::MoveJoints_Event_<ContainerAllocator>>;
+  using ConstWeakPtr =
+    std::weak_ptr<interface::srv::MoveJoints_Event_<ContainerAllocator> const>;
+
+  // pointer types similar to ROS 1, use SharedPtr / ConstSharedPtr instead
+  // NOTE: Can't use 'using' here because GNU C++ can't parse attributes properly
+  typedef DEPRECATED__interface__srv__MoveJoints_Event
+    std::shared_ptr<interface::srv::MoveJoints_Event_<ContainerAllocator>>
+    Ptr;
+  typedef DEPRECATED__interface__srv__MoveJoints_Event
+    std::shared_ptr<interface::srv::MoveJoints_Event_<ContainerAllocator> const>
+    ConstPtr;
+
+  // comparison operators
+  bool operator==(const MoveJoints_Event_ & other) const
+  {
+    if (this->info != other.info) {
+      return false;
+    }
+    if (this->request != other.request) {
+      return false;
+    }
+    if (this->response != other.response) {
+      return false;
+    }
+    return true;
+  }
+  bool operator!=(const MoveJoints_Event_ & other) const
+  {
+    return !this->operator==(other);
+  }
+};  // struct MoveJoints_Event_
+
+// alias to use template instance with default allocator
+using MoveJoints_Event =
+  interface::srv::MoveJoints_Event_<std::allocator<void>>;
+
+// constant definitions
+
+}  // namespace srv
+
+}  // namespace interface
+
 namespace interface
 {
 
@@ -290,6 +428,7 @@ struct MoveJoints
 {
   using Request = interface::srv::MoveJoints_Request;
   using Response = interface::srv::MoveJoints_Response;
+  using Event = interface::srv::MoveJoints_Event;
 };
 
 }  // namespace srv

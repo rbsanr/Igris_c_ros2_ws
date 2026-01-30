@@ -1,0 +1,21 @@
+[0.589s] Invoking command in '/home/josh/Igris_c_ros2_ws/build/collect_data': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/collect_data/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/josh/Igris_c_ros2_ws/build/collect_data/build --no-deps symlink_data --force
+[0.827s] running develop
+[0.958s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[0.958s]   self.local_index = Environment(self.shadow_path + sys.path)
+[0.986s] running egg_info
+[1.002s] writing collect_data.egg-info/PKG-INFO
+[1.002s] writing dependency_links to collect_data.egg-info/dependency_links.txt
+[1.002s] writing entry points to collect_data.egg-info/entry_points.txt
+[1.002s] writing requirements to collect_data.egg-info/requires.txt
+[1.002s] writing top-level names to collect_data.egg-info/top_level.txt
+[1.033s] reading manifest file 'collect_data.egg-info/SOURCES.txt'
+[1.034s] writing manifest file 'collect_data.egg-info/SOURCES.txt'
+[1.050s] running build_ext
+[1.050s] Creating /home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages/collect-data.egg-link (link to .)
+[1.050s] Installing data_collector script to /home/josh/Igris_c_ros2_ws/install/collect_data/lib/collect_data
+[1.050s] 
+[1.051s] Installed /home/josh/Igris_c_ros2_ws/build/collect_data
+[1.051s] running symlink_data
+[1.051s] symbolically linking /home/josh/Igris_c_ros2_ws/build/collect_data/resource/collect_data -> /home/josh/Igris_c_ros2_ws/install/collect_data/share/ament_index/resource_index/packages
+[1.051s] symbolically linking /home/josh/Igris_c_ros2_ws/build/collect_data/package.xml -> /home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data
+[1.069s] Invoked command in '/home/josh/Igris_c_ros2_ws/build/collect_data' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/collect_data/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/josh/Igris_c_ros2_ws/build/collect_data/build --no-deps symlink_data --force

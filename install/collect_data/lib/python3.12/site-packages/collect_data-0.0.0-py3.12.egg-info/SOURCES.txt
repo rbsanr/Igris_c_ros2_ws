@@ -1,0 +1,17 @@
+LICENSE
+package.xml
+setup.cfg
+setup.py
+../../build/collect_data/collect_data.egg-info/PKG-INFO
+../../build/collect_data/collect_data.egg-info/SOURCES.txt
+../../build/collect_data/collect_data.egg-info/dependency_links.txt
+../../build/collect_data/collect_data.egg-info/entry_points.txt
+../../build/collect_data/collect_data.egg-info/requires.txt
+../../build/collect_data/collect_data.egg-info/top_level.txt
+../../build/collect_data/collect_data.egg-info/zip-safe
+collect_data/__init__.py
+collect_data/data_collector.py
+resource/collect_data
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

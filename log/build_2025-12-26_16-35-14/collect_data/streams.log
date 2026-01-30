@@ -1,0 +1,25 @@
+[1.184s] Invoking command in '/home/josh/Igris_c_ros2_ws/src/collect_data': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/collect_data/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/collect_data build --build-base /home/josh/Igris_c_ros2_ws/build/collect_data/build install --record /home/josh/Igris_c_ros2_ws/build/collect_data/install.log --single-version-externally-managed install_data
+[1.399s] running egg_info
+[1.415s] writing ../../build/collect_data/collect_data.egg-info/PKG-INFO
+[1.416s] writing dependency_links to ../../build/collect_data/collect_data.egg-info/dependency_links.txt
+[1.416s] writing entry points to ../../build/collect_data/collect_data.egg-info/entry_points.txt
+[1.416s] writing requirements to ../../build/collect_data/collect_data.egg-info/requires.txt
+[1.416s] writing top-level names to ../../build/collect_data/collect_data.egg-info/top_level.txt
+[1.449s] reading manifest file '../../build/collect_data/collect_data.egg-info/SOURCES.txt'
+[1.449s] adding license file 'LICENSE'
+[1.449s] writing manifest file '../../build/collect_data/collect_data.egg-info/SOURCES.txt'
+[1.450s] running build
+[1.450s] running build_py
+[1.450s] copying collect_data/data_collector.py -> /home/josh/Igris_c_ros2_ws/build/collect_data/build/lib/collect_data
+[1.450s] running install
+[1.454s] running install_lib
+[1.471s] copying /home/josh/Igris_c_ros2_ws/build/collect_data/build/lib/collect_data/data_collector.py -> /home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages/collect_data
+[1.471s] byte-compiling /home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages/collect_data/data_collector.py to data_collector.cpython-312.pyc
+[1.473s] running install_data
+[1.473s] running install_egg_info
+[1.491s] removing '/home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages/collect_data-0.0.0-py3.12.egg-info' (and everything under it)
+[1.492s] Copying ../../build/collect_data/collect_data.egg-info to /home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages/collect_data-0.0.0-py3.12.egg-info
+[1.492s] running install_scripts
+[1.601s] Installing data_collector script to /home/josh/Igris_c_ros2_ws/install/collect_data/lib/collect_data
+[1.601s] writing list of installed files to '/home/josh/Igris_c_ros2_ws/build/collect_data/install.log'
+[1.622s] Invoked command in '/home/josh/Igris_c_ros2_ws/src/collect_data' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/collect_data/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/collect_data build --build-base /home/josh/Igris_c_ros2_ws/build/collect_data/build install --record /home/josh/Igris_c_ros2_ws/build/collect_data/install.log --single-version-externally-managed install_data

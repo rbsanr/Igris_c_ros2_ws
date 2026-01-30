@@ -1,0 +1,36 @@
+[1.175s] Invoking command in '/home/josh/Igris_c_ros2_ws/src/Igris': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/Igris/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/Igris build --build-base /home/josh/Igris_c_ros2_ws/build/Igris/build install --record /home/josh/Igris_c_ros2_ws/build/Igris/install.log --single-version-externally-managed install_data
+[1.411s] running egg_info
+[1.411s] creating ../../build/Igris/Igris.egg-info
+[1.428s] writing ../../build/Igris/Igris.egg-info/PKG-INFO
+[1.428s] writing dependency_links to ../../build/Igris/Igris.egg-info/dependency_links.txt
+[1.428s] writing requirements to ../../build/Igris/Igris.egg-info/requires.txt
+[1.428s] writing top-level names to ../../build/Igris/Igris.egg-info/top_level.txt
+[1.428s] writing manifest file '../../build/Igris/Igris.egg-info/SOURCES.txt'
+[1.464s] reading manifest file '../../build/Igris/Igris.egg-info/SOURCES.txt'
+[1.464s] adding license file 'LICENSE'
+[1.465s] writing manifest file '../../build/Igris/Igris.egg-info/SOURCES.txt'
+[1.465s] running build
+[1.465s] running build_py
+[1.465s] creating /home/josh/Igris_c_ros2_ws/build/Igris/build
+[1.465s] creating /home/josh/Igris_c_ros2_ws/build/Igris/build/lib
+[1.465s] creating /home/josh/Igris_c_ros2_ws/build/Igris/build/lib/Igris
+[1.465s] copying Igris/robot_controller.py -> /home/josh/Igris_c_ros2_ws/build/Igris/build/lib/Igris
+[1.465s] copying Igris/__init__.py -> /home/josh/Igris_c_ros2_ws/build/Igris/build/lib/Igris
+[1.465s] running install
+[1.471s] running install_lib
+[1.489s] creating /home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages/Igris
+[1.489s] copying /home/josh/Igris_c_ros2_ws/build/Igris/build/lib/Igris/robot_controller.py -> /home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages/Igris
+[1.489s] copying /home/josh/Igris_c_ros2_ws/build/Igris/build/lib/Igris/__init__.py -> /home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages/Igris
+[1.489s] byte-compiling /home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages/Igris/robot_controller.py to robot_controller.cpython-312.pyc
+[1.490s] byte-compiling /home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages/Igris/__init__.py to __init__.cpython-312.pyc
+[1.490s] running install_data
+[1.490s] creating /home/josh/Igris_c_ros2_ws/install/Igris/share/ament_index
+[1.490s] creating /home/josh/Igris_c_ros2_ws/install/Igris/share/ament_index/resource_index
+[1.490s] creating /home/josh/Igris_c_ros2_ws/install/Igris/share/ament_index/resource_index/packages
+[1.490s] copying resource/Igris -> /home/josh/Igris_c_ros2_ws/install/Igris/share/ament_index/resource_index/packages
+[1.490s] copying package.xml -> /home/josh/Igris_c_ros2_ws/install/Igris/share/Igris
+[1.490s] running install_egg_info
+[1.509s] Copying ../../build/Igris/Igris.egg-info to /home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages/Igris-0.0.0-py3.12.egg-info
+[1.510s] running install_scripts
+[1.630s] writing list of installed files to '/home/josh/Igris_c_ros2_ws/build/Igris/install.log'
+[1.660s] Invoked command in '/home/josh/Igris_c_ros2_ws/src/Igris' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/Igris/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/Igris build --build-base /home/josh/Igris_c_ros2_ws/build/Igris/build install --record /home/josh/Igris_c_ros2_ws/build/Igris/install.log --single-version-externally-managed install_data

@@ -1,0 +1,46 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "interface/srv/MoveJoints_Request",
+      "fields": [
+        {
+          "name": "ids",
+          "type": {
+            "type_id": 150,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "positions",
+          "type": {
+            "type_id": 155,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "velocity",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "interface/srv/MoveJoints_Request",
+      "hash_string": "RIHS01_90e041b2d1e713666a2262f464be53eb002d77e2b142ea57aa2bdb7557d6c12f"
+    }
+  ]
+}

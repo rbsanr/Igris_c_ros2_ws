@@ -1,0 +1,8 @@
+source;share/igris/hook/cmake_prefix_path.ps1
+source;share/igris/hook/cmake_prefix_path.dsv
+source;share/igris/hook/cmake_prefix_path.sh
+source;share/igris/local_setup.bash
+source;share/igris/local_setup.dsv
+source;share/igris/local_setup.ps1
+source;share/igris/local_setup.sh
+source;share/igris/local_setup.zsh

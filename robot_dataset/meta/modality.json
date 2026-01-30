@@ -1,0 +1,33 @@
+{
+  "observation.state": {
+    "dtype": "float32",
+    "shape": [
+      -1
+    ],
+    "names": [
+      "joint_positions"
+    ]
+  },
+  "observation.images.ego_view": {
+    "dtype": "video",
+    "shape": [
+      480,
+      640,
+      3
+    ],
+    "names": [
+      "height",
+      "width",
+      "channels"
+    ]
+  },
+  "action": {
+    "dtype": "float32",
+    "shape": [
+      -1
+    ],
+    "names": [
+      "target_joint_positions"
+    ]
+  }
+}

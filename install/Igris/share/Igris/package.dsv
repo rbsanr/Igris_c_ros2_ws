@@ -1,0 +1,6 @@
+source;share/Igris/hook/pythonpath.ps1
+source;share/Igris/hook/pythonpath.dsv
+source;share/Igris/hook/pythonpath.sh
+source;share/Igris/hook/ament_prefix_path.ps1
+source;share/Igris/hook/ament_prefix_path.dsv
+source;share/Igris/hook/ament_prefix_path.sh

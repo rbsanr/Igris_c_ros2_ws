@@ -1,0 +1,66 @@
+[0.484s] Invoking command in '/home/josh/Igris_c_ros2_ws/build/igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/josh/Igris_c_ros2_ws/src/igris -DCMAKE_INSTALL_PREFIX=/home/josh/Igris_c_ros2_ws/install/igris
+[0.527s] -- The C compiler identification is GNU 13.3.0
+[0.571s] -- The CXX compiler identification is GNU 13.3.0
+[0.585s] -- Detecting C compiler ABI info
+[0.658s] -- Detecting C compiler ABI info - done
+[0.665s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.665s] -- Detecting C compile features
+[0.665s] -- Detecting C compile features - done
+[0.673s] -- Detecting CXX compiler ABI info
+[0.755s] -- Detecting CXX compiler ABI info - done
+[0.767s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.767s] -- Detecting CXX compile features
+[0.767s] -- Detecting CXX compile features - done
+[0.771s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.898s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.992s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.035s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.048s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.063s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.079s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.153s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.156s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.232s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.252s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.271s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.349s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.405s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.477s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.478s] -- Found Threads: TRUE  
+[1.489s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.573s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.573s] -- Configured cppcheck include dirs: 
+[1.573s] -- Configured cppcheck exclude dirs and/or files: 
+[1.574s] -- Added test 'lint_cmake' to check CMake code style
+[1.575s] -- Added test 'uncrustify' to check C / C++ code style
+[1.575s] -- Configured uncrustify additional arguments: 
+[1.575s] -- Added test 'xmllint' to check XML markup files
+[1.577s] -- Configuring done (1.1s)
+[1.586s] -- Generating done (0.0s)
+[1.589s] -- Build files have been written to: /home/josh/Igris_c_ros2_ws/build/igris
+[1.597s] Invoked command in '/home/josh/Igris_c_ros2_ws/build/igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/josh/Igris_c_ros2_ws/src/igris -DCMAKE_INSTALL_PREFIX=/home/josh/Igris_c_ros2_ws/install/igris
+[1.598s] Invoking command in '/home/josh/Igris_c_ros2_ws/build/igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/igris -- -j16 -l16
+[1.647s] [ 50%] [32mBuilding CXX object CMakeFiles/igris.dir/src/igris.cpp.o[0m
+[7.537s] [100%] [32m[1mLinking CXX executable igris[0m
+[7.911s] [100%] Built target igris
+[7.922s] Invoked command in '/home/josh/Igris_c_ros2_ws/build/igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/igris -- -j16 -l16
+[7.923s] Invoking command in '/home/josh/Igris_c_ros2_ws/build/igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/igris
+[7.930s] -- Install configuration: ""
+[7.930s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/lib/igris/igris
+[7.941s] -- Set non-toolchain portion of runtime path of "/home/josh/Igris_c_ros2_ws/install/igris/lib/igris/igris" to ""
+[7.941s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/ament_index/resource_index/package_run_dependencies/igris
+[7.941s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/ament_index/resource_index/parent_prefix_path/igris
+[7.941s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/ament_prefix_path.sh
+[7.941s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/ament_prefix_path.dsv
+[7.941s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/path.sh
+[7.941s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/path.dsv
+[7.942s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.bash
+[7.942s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.sh
+[7.942s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.zsh
+[7.942s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.dsv
+[7.942s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.dsv
+[7.942s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/ament_index/resource_index/packages/igris
+[7.942s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/cmake/igrisConfig.cmake
+[7.942s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/cmake/igrisConfig-version.cmake
+[7.943s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.xml
+[7.944s] Invoked command in '/home/josh/Igris_c_ros2_ws/build/igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/igris

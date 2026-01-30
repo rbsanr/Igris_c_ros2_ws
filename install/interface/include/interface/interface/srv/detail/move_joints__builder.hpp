@@ -2,6 +2,9 @@
 // with input from interface:srv/MoveJoints.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "interface/srv/move_joints.hpp"
+
+
 #ifndef INTERFACE__SRV__DETAIL__MOVE_JOINTS__BUILDER_HPP_
 #define INTERFACE__SRV__DETAIL__MOVE_JOINTS__BUILDER_HPP_
 
@@ -139,6 +142,80 @@ inline
 auto build<::interface::srv::MoveJoints_Response>()
 {
   return interface::srv::builder::Init_MoveJoints_Response_success();
+}
+
+}  // namespace interface
+
+
+namespace interface
+{
+
+namespace srv
+{
+
+namespace builder
+{
+
+class Init_MoveJoints_Event_response
+{
+public:
+  explicit Init_MoveJoints_Event_response(::interface::srv::MoveJoints_Event & msg)
+  : msg_(msg)
+  {}
+  ::interface::srv::MoveJoints_Event response(::interface::srv::MoveJoints_Event::_response_type arg)
+  {
+    msg_.response = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::interface::srv::MoveJoints_Event msg_;
+};
+
+class Init_MoveJoints_Event_request
+{
+public:
+  explicit Init_MoveJoints_Event_request(::interface::srv::MoveJoints_Event & msg)
+  : msg_(msg)
+  {}
+  Init_MoveJoints_Event_response request(::interface::srv::MoveJoints_Event::_request_type arg)
+  {
+    msg_.request = std::move(arg);
+    return Init_MoveJoints_Event_response(msg_);
+  }
+
+private:
+  ::interface::srv::MoveJoints_Event msg_;
+};
+
+class Init_MoveJoints_Event_info
+{
+public:
+  Init_MoveJoints_Event_info()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_MoveJoints_Event_request info(::interface::srv::MoveJoints_Event::_info_type arg)
+  {
+    msg_.info = std::move(arg);
+    return Init_MoveJoints_Event_request(msg_);
+  }
+
+private:
+  ::interface::srv::MoveJoints_Event msg_;
+};
+
+}  // namespace builder
+
+}  // namespace srv
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::interface::srv::MoveJoints_Event>()
+{
+  return interface::srv::builder::Init_MoveJoints_Event_info();
 }
 
 }  // namespace interface

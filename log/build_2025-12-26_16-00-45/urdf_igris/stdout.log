@@ -1,0 +1,131 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/josh/Igris_c_ros2_ws/build/urdf_igris
+-- Install configuration: ""
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/igris_c_v2_parallel.urdf
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/igris_c_v2.urdf
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/right_hand_igris_c.urdf
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Pitch_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Pitch_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Motor_Output_Front_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Parallel_Front_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Roll_B.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Flange_Back_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Roll_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Flange_Back_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Parallel_Back_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Coupler_Front_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Parallel_Out_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Flange_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Roll_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Flange_Out_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Roll_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Airforce_R_v1.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Parallel_Out_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Roll_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Pitch_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Motor_Output_Front_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Universal_Back_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Flange_Out_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Flange_In_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Neck_Pitch.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Parallel_In_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Universal_Front_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Coupler_Back_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Elbow_Pitch_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Yaw_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Roll.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Parallel_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Yaw_B.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Shoe_v4.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hand_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Flange_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Knee_Pitch_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Shoe_v5.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Parallel_Front_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Pitch_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Pitch_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Universal_Back_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Pitch.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_CirCut.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Flange_Front_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Parallel_Back_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Roll_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Motor_Output_Back_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Yaw_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Flange_Front_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Roll_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Elbow_Pitch_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hand_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Pitch_B.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Airforce_L_v1.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Flange_In_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Yaw_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Coupler_Front_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Motor_Output_Back_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Neck_Yaw.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Universal_Front_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_RecCut.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Yaw_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Coupler_Back_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Shoe_v3_visual.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Parallel_In_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Yaw.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Pitch_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Pitch_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Pelvis.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Parallel_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Knee_Pitch_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Pitch_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Shoe_v3_collision.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Thumb_Proximal_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Finger_Middle.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Thumb_Distal_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Thumb_Proximal_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Thumb_Middle_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Palm_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Palm_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Finger_Distal.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Thumb_Middle_Left.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Thumb_Distal_Right.stl
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/left_hand_igris_c.urdf
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/ament_index/resource_index/package_run_dependencies/urdf_igris
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/ament_index/resource_index/parent_prefix_path/urdf_igris
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/environment/ament_prefix_path.sh
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/environment/ament_prefix_path.dsv
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/environment/path.sh
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/environment/path.dsv
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/local_setup.bash
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/local_setup.sh
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/local_setup.zsh
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/local_setup.dsv
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.dsv
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/ament_index/resource_index/packages/urdf_igris
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/cmake/urdf_igrisConfig.cmake
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/cmake/urdf_igrisConfig-version.cmake
+-- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.xml

@@ -1,0 +1,979 @@
+[0.119s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.119s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x75c66ba92ae0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x75c66ba5d280>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x75c66ba5d280>>, mixin_verb=('build',))
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.192s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/josh/Igris_c_ros2_ws'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extension 'ros'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extensions ['cmake', 'python']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extension 'cmake'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extension 'python'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extensions ['python_setup_py']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset) by extension 'python_setup_py'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extension 'ros'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extensions ['cmake', 'python']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extension 'cmake'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extension 'python'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extensions ['python_setup_py']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data) by extension 'python_setup_py'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extension 'ros'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extensions ['cmake', 'python']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extension 'cmake'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extension 'python'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extensions ['python_setup_py']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-000) by extension 'python_setup_py'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extension 'ros'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extensions ['cmake', 'python']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extension 'cmake'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extension 'python'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extensions ['python_setup_py']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-001) by extension 'python_setup_py'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extension 'ros'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extensions ['cmake', 'python']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extension 'cmake'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extension 'python'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extensions ['python_setup_py']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-002) by extension 'python_setup_py'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extension 'ros'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extensions ['cmake', 'python']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extension 'cmake'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extension 'python'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extensions ['python_setup_py']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-003) by extension 'python_setup_py'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extension 'ros'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extensions ['cmake', 'python']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extension 'cmake'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extension 'python'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extensions ['python_setup_py']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-004) by extension 'python_setup_py'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extension 'ros'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extensions ['cmake', 'python']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extension 'cmake'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extension 'python'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extensions ['python_setup_py']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-005) by extension 'python_setup_py'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extension 'ros'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extensions ['cmake', 'python']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extension 'cmake'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extension 'python'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extensions ['python_setup_py']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-006) by extension 'python_setup_py'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extension 'ros'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extensions ['cmake', 'python']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extension 'cmake'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extension 'python'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extensions ['python_setup_py']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-007) by extension 'python_setup_py'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extension 'ros'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extensions ['cmake', 'python']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extension 'cmake'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extension 'python'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extensions ['python_setup_py']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/data/chunk-008) by extension 'python_setup_py'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extension 'ros'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extensions ['cmake', 'python']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extension 'cmake'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extension 'python'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extensions ['python_setup_py']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/meta) by extension 'python_setup_py'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extension 'ros'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extensions ['cmake', 'python']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extension 'cmake'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extension 'python'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extensions ['python_setup_py']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos) by extension 'python_setup_py'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extension 'ros'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extensions ['cmake', 'python']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extension 'cmake'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extension 'python'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extensions ['python_setup_py']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000) by extension 'python_setup_py'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extension 'ros'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extensions ['cmake', 'python']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extension 'cmake'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extension 'python'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extensions ['python_setup_py']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-000/observation.images.ego_view) by extension 'python_setup_py'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extension 'ros'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extensions ['cmake', 'python']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extension 'cmake'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extension 'python'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extensions ['python_setup_py']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001) by extension 'python_setup_py'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extension 'ignore_ament_install'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extensions ['colcon_pkg']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extension 'colcon_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extensions ['colcon_meta']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extension 'colcon_meta'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extensions ['ros']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extension 'ros'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extensions ['cmake', 'python']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extension 'cmake'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extension 'python'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extensions ['python_setup_py']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-001/observation.images.ego_view) by extension 'python_setup_py'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extension 'ignore_ament_install'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extensions ['colcon_pkg']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extension 'colcon_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extensions ['colcon_meta']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extension 'colcon_meta'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extensions ['ros']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extension 'ros'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extensions ['cmake', 'python']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extension 'cmake'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extension 'python'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extensions ['python_setup_py']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002) by extension 'python_setup_py'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extension 'ros'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extensions ['cmake', 'python']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extension 'cmake'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extension 'python'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extensions ['python_setup_py']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-002/observation.images.ego_view) by extension 'python_setup_py'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extension 'ros'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extensions ['cmake', 'python']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extension 'cmake'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extension 'python'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extensions ['python_setup_py']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003) by extension 'python_setup_py'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extension 'ros'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extensions ['cmake', 'python']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extension 'cmake'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extension 'python'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extensions ['python_setup_py']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-003/observation.images.ego_view) by extension 'python_setup_py'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extension 'ros'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extensions ['cmake', 'python']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extension 'cmake'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extension 'python'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extensions ['python_setup_py']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004) by extension 'python_setup_py'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extension 'ros'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extensions ['cmake', 'python']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extension 'cmake'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extension 'python'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extensions ['python_setup_py']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-004/observation.images.ego_view) by extension 'python_setup_py'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extension 'ros'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extensions ['cmake', 'python']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extension 'cmake'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extension 'python'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extensions ['python_setup_py']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005) by extension 'python_setup_py'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extension 'ros'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extensions ['cmake', 'python']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extension 'cmake'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extension 'python'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extensions ['python_setup_py']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-005/observation.images.ego_view) by extension 'python_setup_py'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extension 'ros'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extensions ['cmake', 'python']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extension 'cmake'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extension 'python'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extensions ['python_setup_py']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006) by extension 'python_setup_py'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extension 'ros'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extensions ['cmake', 'python']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extension 'cmake'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extension 'python'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extensions ['python_setup_py']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-006/observation.images.ego_view) by extension 'python_setup_py'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extension 'ros'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extensions ['cmake', 'python']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extension 'cmake'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extension 'python'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extensions ['python_setup_py']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007) by extension 'python_setup_py'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extension 'ros'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extensions ['cmake', 'python']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extension 'cmake'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extension 'python'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extensions ['python_setup_py']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-007/observation.images.ego_view) by extension 'python_setup_py'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extensions ['colcon_meta']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extension 'ros'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extensions ['cmake', 'python']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extension 'cmake'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extension 'python'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extensions ['python_setup_py']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008) by extension 'python_setup_py'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extension 'ros'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extensions ['cmake', 'python']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extension 'cmake'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extension 'python'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extensions ['python_setup_py']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(robot_dataset/videos/chunk-008/observation.images.ego_view) by extension 'python_setup_py'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extension 'ros'
+[0.229s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Igris' with type 'ros.ament_python' and name 'Igris'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ros'
+[0.230s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera' with type 'ros.ament_python' and name 'camera'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extension 'ros'
+[0.231s] DEBUG:colcon.colcon_core.package_identification:Package 'src/collect_data' with type 'ros.ament_python' and name 'collect_data'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extension 'ignore_ament_install'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extensions ['colcon_pkg']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extension 'colcon_pkg'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extensions ['colcon_meta']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extension 'colcon_meta'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extensions ['ros']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extension 'ros'
+[0.232s] DEBUG:colcon.colcon_core.package_identification:Package 'src/igris' with type 'ros.ament_cmake' and name 'igris'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extension 'ros'
+[0.233s] DEBUG:colcon.colcon_core.package_identification:Package 'src/interface' with type 'ros.ament_cmake' and name 'interface'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extension 'ros'
+[0.234s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_igris' with type 'ros.ament_cmake' and name 'moveit_igris'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extension 'ros'
+[0.235s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teleoperator' with type 'ros.ament_python' and name 'teleoperator'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extension 'ros'
+[0.236s] DEBUG:colcon.colcon_core.package_identification:Package 'src/urdf_igris' with type 'ros.ament_cmake' and name 'urdf_igris'
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.254s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/josh/Igris_c_ros2_ws/install
+[0.256s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 381 installed packages in /opt/ros/jazzy
+[0.257s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'cmake_target' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'cmake_clean_cache' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'cmake_clean_first' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'cmake_force_configure' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'ament_cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'catkin_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.294s] DEBUG:colcon.colcon_core.verb:Building package 'Igris' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/Igris', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/Igris', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/Igris', 'symlink_install': False, 'test_result_base': None}
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_target' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.294s] DEBUG:colcon.colcon_core.verb:Building package 'camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/camera', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/camera', 'symlink_install': False, 'test_result_base': None}
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'cmake_target' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'cmake_clean_cache' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'cmake_clean_first' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'cmake_force_configure' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'ament_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'catkin_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.294s] DEBUG:colcon.colcon_core.verb:Building package 'collect_data' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/collect_data', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/collect_data', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/collect_data', 'symlink_install': False, 'test_result_base': None}
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'cmake_target' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'cmake_clean_cache' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'cmake_clean_first' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'cmake_force_configure' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'ament_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'catkin_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.294s] DEBUG:colcon.colcon_core.verb:Building package 'igris' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/igris', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/igris', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/igris', 'symlink_install': False, 'test_result_base': None}
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_target' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.295s] DEBUG:colcon.colcon_core.verb:Building package 'interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/interface', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/interface', 'symlink_install': False, 'test_result_base': None}
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'cmake_target' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'cmake_clean_first' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'cmake_force_configure' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'ament_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.295s] DEBUG:colcon.colcon_core.verb:Building package 'teleoperator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/teleoperator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/teleoperator', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/teleoperator', 'symlink_install': False, 'test_result_base': None}
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'cmake_target' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'cmake_clean_cache' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'cmake_clean_first' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'cmake_force_configure' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'ament_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'catkin_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.295s] DEBUG:colcon.colcon_core.verb:Building package 'urdf_igris' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/urdf_igris', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/urdf_igris', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/urdf_igris', 'symlink_install': False, 'test_result_base': None}
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'cmake_target' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'cmake_clean_cache' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'cmake_clean_first' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'cmake_force_configure' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'ament_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'catkin_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.295s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_igris' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/moveit_igris', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/moveit_igris', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/moveit_igris', 'symlink_install': False, 'test_result_base': None}
+[0.295s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.296s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.296s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/urdf_igris' with build type 'ament_cmake'
+[0.296s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/josh/Igris_c_ros2_ws/src/urdf_igris'
+[0.299s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.300s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.300s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.303s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/Igris' with build type 'ament_python'
+[0.303s] Level 1:colcon.colcon_core.shell:create_environment_hook('Igris', 'ament_prefix_path')
+[0.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/hook/ament_prefix_path.ps1'
+[0.303s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/hook/ament_prefix_path.dsv'
+[0.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/hook/ament_prefix_path.sh'
+[0.304s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.304s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.307s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/camera' with build type 'ament_python'
+[0.307s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera', 'ament_prefix_path')
+[0.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/hook/ament_prefix_path.ps1'
+[0.307s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/hook/ament_prefix_path.dsv'
+[0.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/hook/ament_prefix_path.sh'
+[0.308s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.308s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.310s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/collect_data' with build type 'ament_python'
+[0.310s] Level 1:colcon.colcon_core.shell:create_environment_hook('collect_data', 'ament_prefix_path')
+[0.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/hook/ament_prefix_path.ps1'
+[0.311s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/hook/ament_prefix_path.dsv'
+[0.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/hook/ament_prefix_path.sh'
+[0.311s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.311s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.314s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/igris' with build type 'ament_cmake'
+[0.314s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/josh/Igris_c_ros2_ws/src/igris'
+[0.314s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.314s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.317s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/interface' with build type 'ament_cmake'
+[0.317s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/josh/Igris_c_ros2_ws/src/interface'
+[0.317s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.317s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.320s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/teleoperator' with build type 'ament_python'
+[0.320s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleoperator', 'ament_prefix_path')
+[0.320s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/hook/ament_prefix_path.ps1'
+[0.320s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/hook/ament_prefix_path.dsv'
+[0.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/hook/ament_prefix_path.sh'
+[0.321s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.321s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/urdf_igris -- -j16 -l16
+[0.478s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/josh/Igris_c_ros2_ws/src/Igris'
+[0.478s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.478s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.627s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/josh/Igris_c_ros2_ws/src/camera'
+[0.627s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.627s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.778s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/josh/Igris_c_ros2_ws/src/collect_data'
+[0.778s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.778s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.783s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/igris -- -j16 -l16
+[0.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/interface -- -j16 -l16
+[0.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/urdf_igris -- -j16 -l16
+[0.795s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/urdf_igris
+[0.959s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/josh/Igris_c_ros2_ws/src/teleoperator'
+[0.959s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.959s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.973s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urdf_igris)
+[0.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/urdf_igris
+[0.978s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris' for CMake module files
+[0.978s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris' for CMake config files
+[0.979s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdf_igris', 'cmake_prefix_path')
+[0.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/hook/cmake_prefix_path.ps1'
+[0.979s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/hook/cmake_prefix_path.dsv'
+[0.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/hook/cmake_prefix_path.sh'
+[0.980s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/bin'
+[0.980s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/lib/pkgconfig/urdf_igris.pc'
+[0.980s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/lib/python3.12/site-packages'
+[0.981s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/bin'
+[0.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.ps1'
+[0.981s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.dsv'
+[0.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.sh'
+[0.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.bash'
+[0.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.zsh'
+[0.984s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/colcon-core/packages/urdf_igris)
+[0.984s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urdf_igris)
+[0.984s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris' for CMake module files
+[0.985s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris' for CMake config files
+[0.985s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdf_igris', 'cmake_prefix_path')
+[0.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/hook/cmake_prefix_path.ps1'
+[0.985s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/hook/cmake_prefix_path.dsv'
+[0.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/hook/cmake_prefix_path.sh'
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/bin'
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/lib/pkgconfig/urdf_igris.pc'
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/lib/python3.12/site-packages'
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/bin'
+[0.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.ps1'
+[0.987s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.dsv'
+[0.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.sh'
+[0.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.bash'
+[0.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.zsh'
+[0.988s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/colcon-core/packages/urdf_igris)
+[0.990s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/moveit_igris' with build type 'ament_cmake'
+[0.990s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/josh/Igris_c_ros2_ws/src/moveit_igris'
+[0.990s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.990s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/moveit_igris -- -j16 -l16
+[1.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris' returned '0': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/moveit_igris -- -j16 -l16
+[1.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/moveit_igris
+[1.048s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_igris)
+[1.048s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris' for CMake module files
+[1.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris' returned '0': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/moveit_igris
+[1.049s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris' for CMake config files
+[1.049s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_igris', 'cmake_prefix_path')
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/hook/cmake_prefix_path.ps1'
+[1.050s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/hook/cmake_prefix_path.dsv'
+[1.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/hook/cmake_prefix_path.sh'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/bin'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/lib/pkgconfig/moveit_igris.pc'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/lib/python3.12/site-packages'
+[1.051s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/bin'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.ps1'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.dsv'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.sh'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.bash'
+[1.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.zsh'
+[1.052s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/colcon-core/packages/moveit_igris)
+[1.052s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_igris)
+[1.052s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris' for CMake module files
+[1.053s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris' for CMake config files
+[1.053s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_igris', 'cmake_prefix_path')
+[1.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/hook/cmake_prefix_path.ps1'
+[1.053s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/hook/cmake_prefix_path.dsv'
+[1.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/hook/cmake_prefix_path.sh'
+[1.054s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/bin'
+[1.054s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/lib/pkgconfig/moveit_igris.pc'
+[1.054s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/lib/python3.12/site-packages'
+[1.054s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/bin'
+[1.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.ps1'
+[1.054s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.dsv'
+[1.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.sh'
+[1.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.bash'
+[1.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.zsh'
+[1.056s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/colcon-core/packages/moveit_igris)
+[1.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/interface -- -j16 -l16
+[1.124s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/interface
+[1.183s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interface)
+[1.183s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/interface
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface' for CMake module files
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface' for CMake config files
+[1.185s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'cmake_prefix_path')
+[1.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/cmake_prefix_path.ps1'
+[1.185s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/cmake_prefix_path.dsv'
+[1.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/cmake_prefix_path.sh'
+[1.186s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/lib'
+[1.186s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'ld_library_path_lib')
+[1.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/ld_library_path_lib.ps1'
+[1.187s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/ld_library_path_lib.dsv'
+[1.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/ld_library_path_lib.sh'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/bin'
+[1.188s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/lib/pkgconfig/interface.pc'
+[1.188s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/lib/python3.12/site-packages'
+[1.188s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'pythonpath')
+[1.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/pythonpath.ps1'
+[1.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/pythonpath.dsv'
+[1.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/pythonpath.sh'
+[1.189s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/bin'
+[1.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.ps1'
+[1.190s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.dsv'
+[1.190s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.sh'
+[1.190s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.bash'
+[1.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.zsh'
+[1.191s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/interface/share/colcon-core/packages/interface)
+[1.191s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interface)
+[1.191s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface' for CMake module files
+[1.192s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface' for CMake config files
+[1.192s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'cmake_prefix_path')
+[1.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/cmake_prefix_path.ps1'
+[1.193s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/cmake_prefix_path.dsv'
+[1.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/cmake_prefix_path.sh'
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/lib'
+[1.193s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'ld_library_path_lib')
+[1.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/ld_library_path_lib.ps1'
+[1.194s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/ld_library_path_lib.dsv'
+[1.194s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/ld_library_path_lib.sh'
+[1.194s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/bin'
+[1.194s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/lib/pkgconfig/interface.pc'
+[1.194s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/lib/python3.12/site-packages'
+[1.194s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'pythonpath')
+[1.194s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/pythonpath.ps1'
+[1.195s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/pythonpath.dsv'
+[1.195s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/pythonpath.sh'
+[1.195s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/bin'
+[1.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.ps1'
+[1.196s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.dsv'
+[1.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.sh'
+[1.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.bash'
+[1.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.zsh'
+[1.197s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/interface/share/colcon-core/packages/interface)
+[1.361s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/igris -- -j16 -l16
+[1.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/igris
+[1.384s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(igris)
+[1.384s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/igris
+[1.385s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris' for CMake module files
+[1.385s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris' for CMake config files
+[1.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('igris', 'cmake_prefix_path')
+[1.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/hook/cmake_prefix_path.ps1'
+[1.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/hook/cmake_prefix_path.dsv'
+[1.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/hook/cmake_prefix_path.sh'
+[1.387s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/lib'
+[1.387s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/bin'
+[1.387s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/lib/pkgconfig/igris.pc'
+[1.387s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/lib/python3.12/site-packages'
+[1.387s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/bin'
+[1.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.ps1'
+[1.388s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.dsv'
+[1.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.sh'
+[1.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.bash'
+[1.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.zsh'
+[1.389s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/igris/share/colcon-core/packages/igris)
+[1.389s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(igris)
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris' for CMake module files
+[1.390s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris' for CMake config files
+[1.390s] Level 1:colcon.colcon_core.shell:create_environment_hook('igris', 'cmake_prefix_path')
+[1.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/hook/cmake_prefix_path.ps1'
+[1.390s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/hook/cmake_prefix_path.dsv'
+[1.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/hook/cmake_prefix_path.sh'
+[1.391s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/lib'
+[1.391s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/bin'
+[1.391s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/lib/pkgconfig/igris.pc'
+[1.391s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/lib/python3.12/site-packages'
+[1.391s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/bin'
+[1.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.ps1'
+[1.391s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.dsv'
+[1.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.sh'
+[1.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.bash'
+[1.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.zsh'
+[1.392s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/igris/share/colcon-core/packages/igris)
+[1.462s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/src/teleoperator': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/teleoperator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/teleoperator/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleoperator build --build-base /home/josh/Igris_c_ros2_ws/build/teleoperator/build install --record /home/josh/Igris_c_ros2_ws/build/teleoperator/install.log --single-version-externally-managed install_data
+[1.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/src/collect_data': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/collect_data/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/collect_data build --build-base /home/josh/Igris_c_ros2_ws/build/collect_data/build install --record /home/josh/Igris_c_ros2_ws/build/collect_data/install.log --single-version-externally-managed install_data
+[1.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/src/camera': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera build --build-base /home/josh/Igris_c_ros2_ws/build/camera/build install --record /home/josh/Igris_c_ros2_ws/build/camera/install.log --single-version-externally-managed install_data
+[1.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/src/Igris': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/Igris/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/Igris build --build-base /home/josh/Igris_c_ros2_ws/build/Igris/build install --record /home/josh/Igris_c_ros2_ws/build/Igris/install.log --single-version-externally-managed install_data
+[1.882s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera' for CMake module files
+[1.882s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/src/camera' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera build --build-base /home/josh/Igris_c_ros2_ws/build/camera/build install --record /home/josh/Igris_c_ros2_ws/build/camera/install.log --single-version-externally-managed install_data
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera' for CMake config files
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera/lib'
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera/bin'
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera/lib/pkgconfig/camera.pc'
+[1.884s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera/lib/python3.12/site-packages'
+[1.884s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera', 'pythonpath')
+[1.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/hook/pythonpath.ps1'
+[1.884s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/hook/pythonpath.dsv'
+[1.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/hook/pythonpath.sh'
+[1.885s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera/bin'
+[1.885s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera)
+[1.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/package.ps1'
+[1.885s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/package.dsv'
+[1.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/package.sh'
+[1.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/package.bash'
+[1.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/package.zsh'
+[1.886s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/camera/share/colcon-core/packages/camera)
+[1.887s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data' for CMake module files
+[1.888s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/src/collect_data' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/collect_data/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/collect_data build --build-base /home/josh/Igris_c_ros2_ws/build/collect_data/build install --record /home/josh/Igris_c_ros2_ws/build/collect_data/install.log --single-version-externally-managed install_data
+[1.888s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data' for CMake config files
+[1.888s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data/lib'
+[1.888s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data/bin'
+[1.888s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data/lib/pkgconfig/collect_data.pc'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages'
+[1.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('collect_data', 'pythonpath')
+[1.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/hook/pythonpath.ps1'
+[1.889s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/hook/pythonpath.dsv'
+[1.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/hook/pythonpath.sh'
+[1.890s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data/bin'
+[1.890s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(collect_data)
+[1.890s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/package.ps1'
+[1.890s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/package.dsv'
+[1.890s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/package.sh'
+[1.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/package.bash'
+[1.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/package.zsh'
+[1.891s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/collect_data/share/colcon-core/packages/collect_data)
+[1.892s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator' for CMake module files
+[1.893s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/src/teleoperator' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/teleoperator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/teleoperator/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleoperator build --build-base /home/josh/Igris_c_ros2_ws/build/teleoperator/build install --record /home/josh/Igris_c_ros2_ws/build/teleoperator/install.log --single-version-externally-managed install_data
+[1.893s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator' for CMake config files
+[1.893s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator/lib'
+[1.893s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator/bin'
+[1.893s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator/lib/pkgconfig/teleoperator.pc'
+[1.893s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator/lib/python3.12/site-packages'
+[1.894s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleoperator', 'pythonpath')
+[1.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/hook/pythonpath.ps1'
+[1.894s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/hook/pythonpath.dsv'
+[1.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/hook/pythonpath.sh'
+[1.895s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator/bin'
+[1.895s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleoperator)
+[1.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/package.ps1'
+[1.895s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/package.dsv'
+[1.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/package.sh'
+[1.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/package.bash'
+[1.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/package.zsh'
+[1.896s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/teleoperator/share/colcon-core/packages/teleoperator)
+[1.897s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris' for CMake module files
+[1.897s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/src/Igris' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/Igris/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/Igris build --build-base /home/josh/Igris_c_ros2_ws/build/Igris/build install --record /home/josh/Igris_c_ros2_ws/build/Igris/install.log --single-version-externally-managed install_data
+[1.897s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris' for CMake config files
+[1.898s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris/lib'
+[1.898s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris/bin'
+[1.898s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris/lib/pkgconfig/Igris.pc'
+[1.898s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages'
+[1.898s] Level 1:colcon.colcon_core.shell:create_environment_hook('Igris', 'pythonpath')
+[1.898s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/hook/pythonpath.ps1'
+[1.898s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/hook/pythonpath.dsv'
+[1.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/hook/pythonpath.sh'
+[1.899s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris/bin'
+[1.899s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Igris)
+[1.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/package.ps1'
+[1.900s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/package.dsv'
+[1.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/package.sh'
+[1.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/package.bash'
+[1.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/package.zsh'
+[1.901s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/Igris/share/colcon-core/packages/Igris)
+[1.901s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.901s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.901s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.901s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.914s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.914s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.914s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.925s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.925s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/josh/Igris_c_ros2_ws/install/local_setup.ps1'
+[1.926s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/josh/Igris_c_ros2_ws/install/_local_setup_util_ps1.py'
+[1.927s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/josh/Igris_c_ros2_ws/install/setup.ps1'
+[1.928s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/josh/Igris_c_ros2_ws/install/local_setup.sh'
+[1.929s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/josh/Igris_c_ros2_ws/install/_local_setup_util_sh.py'
+[1.929s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/josh/Igris_c_ros2_ws/install/setup.sh'
+[1.930s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/josh/Igris_c_ros2_ws/install/local_setup.bash'
+[1.930s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/josh/Igris_c_ros2_ws/install/setup.bash'
+[1.931s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/josh/Igris_c_ros2_ws/install/local_setup.zsh'
+[1.932s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/josh/Igris_c_ros2_ws/install/setup.zsh'

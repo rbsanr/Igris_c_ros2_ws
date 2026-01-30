@@ -1,0 +1,42 @@
+[0.018s] Invoking command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/moveit_igris -- -j16 -l16
+[0.056s] Invoked command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris' returned '0': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/moveit_igris -- -j16 -l16
+[0.057s] Invoking command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/moveit_igris
+[0.064s] -- Install configuration: ""
+[0.064s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/ament_index/resource_index/package_run_dependencies/moveit_igris
+[0.064s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/ament_index/resource_index/parent_prefix_path/moveit_igris
+[0.064s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/environment/ament_prefix_path.sh
+[0.064s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/environment/ament_prefix_path.dsv
+[0.064s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/environment/path.sh
+[0.064s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/environment/path.dsv
+[0.065s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/local_setup.bash
+[0.065s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/local_setup.sh
+[0.065s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/local_setup.zsh
+[0.065s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/local_setup.dsv
+[0.065s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.dsv
+[0.065s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/ament_index/resource_index/packages/moveit_igris
+[0.065s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/cmake/moveit_igrisConfig.cmake
+[0.065s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/cmake/moveit_igrisConfig-version.cmake
+[0.065s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.xml
+[0.066s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/launch
+[0.066s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/launch/setup_assistant.launch.py
+[0.066s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/launch/move_group.launch.py
+[0.066s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/launch/static_virtual_joint_tfs.launch.py
+[0.066s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/launch/moveit_rviz.launch.py
+[0.066s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/launch/warehouse_db.launch.py
+[0.066s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/launch/rsp.launch.py
+[0.066s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/launch/demo.launch.py
+[0.066s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/launch/spawn_controllers.launch.py
+[0.066s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/config
+[0.066s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/config/pilz_cartesian_limits.yaml
+[0.067s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/config/moveit.rviz
+[0.067s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/config/joint_limits.yaml
+[0.067s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/config/IGRIS_C.ros2_control.xacro
+[0.067s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/config/kinematics.yaml
+[0.067s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/config/ros2_controllers.yaml
+[0.067s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/config/IGRIS_C.urdf.xacro
+[0.067s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/config/initial_positions.yaml
+[0.067s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/config/IGRIS_C.srdf
+[0.067s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/config/moveit_controllers.yaml
+[0.067s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/config/sensors_3d.yaml
+[0.068s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/.setup_assistant
+[0.068s] Invoked command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris' returned '0': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/moveit_igris

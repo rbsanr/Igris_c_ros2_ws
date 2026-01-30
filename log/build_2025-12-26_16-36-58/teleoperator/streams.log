@@ -1,0 +1,23 @@
+[1.220s] Invoking command in '/home/josh/Igris_c_ros2_ws/src/teleoperator': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/teleoperator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/teleoperator/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleoperator build --build-base /home/josh/Igris_c_ros2_ws/build/teleoperator/build install --record /home/josh/Igris_c_ros2_ws/build/teleoperator/install.log --single-version-externally-managed install_data
+[1.440s] running egg_info
+[1.457s] writing ../../build/teleoperator/teleoperator.egg-info/PKG-INFO
+[1.457s] writing dependency_links to ../../build/teleoperator/teleoperator.egg-info/dependency_links.txt
+[1.458s] writing entry points to ../../build/teleoperator/teleoperator.egg-info/entry_points.txt
+[1.458s] writing requirements to ../../build/teleoperator/teleoperator.egg-info/requires.txt
+[1.458s] writing top-level names to ../../build/teleoperator/teleoperator.egg-info/top_level.txt
+[1.492s] reading manifest file '../../build/teleoperator/teleoperator.egg-info/SOURCES.txt'
+[1.492s] adding license file 'LICENSE'
+[1.493s] writing manifest file '../../build/teleoperator/teleoperator.egg-info/SOURCES.txt'
+[1.493s] running build
+[1.493s] running build_py
+[1.493s] running install
+[1.497s] running install_lib
+[1.515s] running install_data
+[1.515s] running install_egg_info
+[1.536s] removing '/home/josh/Igris_c_ros2_ws/install/teleoperator/lib/python3.12/site-packages/teleoperator-0.0.0-py3.12.egg-info' (and everything under it)
+[1.536s] Copying ../../build/teleoperator/teleoperator.egg-info to /home/josh/Igris_c_ros2_ws/install/teleoperator/lib/python3.12/site-packages/teleoperator-0.0.0-py3.12.egg-info
+[1.537s] running install_scripts
+[1.657s] Installing hand_bridge script to /home/josh/Igris_c_ros2_ws/install/teleoperator/lib/teleoperator
+[1.657s] Installing joint script to /home/josh/Igris_c_ros2_ws/install/teleoperator/lib/teleoperator
+[1.658s] writing list of installed files to '/home/josh/Igris_c_ros2_ws/build/teleoperator/install.log'
+[1.686s] Invoked command in '/home/josh/Igris_c_ros2_ws/src/teleoperator' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/teleoperator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/teleoperator/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleoperator build --build-base /home/josh/Igris_c_ros2_ws/build/teleoperator/build install --record /home/josh/Igris_c_ros2_ws/build/teleoperator/install.log --single-version-externally-managed install_data

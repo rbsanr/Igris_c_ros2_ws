@@ -1,0 +1,565 @@
+[0.078s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.078s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7d17ffd45820>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d17ffd89cd0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d17ffd89cd0>>, mixin_verb=('build',))
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.105s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/josh/Igris_c_ros2_ws'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extension 'ignore_ament_install'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extensions ['colcon_pkg']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extension 'colcon_pkg'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extensions ['colcon_meta']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extension 'colcon_meta'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extensions ['ros']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/Igris) by extension 'ros'
+[0.124s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Igris' with type 'ros.ament_python' and name 'Igris'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ignore', 'ignore_ament_install']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore_ament_install'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_pkg']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_pkg'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_meta']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_meta'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ros']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ros'
+[0.125s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera' with type 'ros.ament_python' and name 'camera'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extensions ['ignore', 'ignore_ament_install']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extension 'ignore'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extension 'ignore_ament_install'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extensions ['colcon_pkg']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extension 'colcon_pkg'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extensions ['colcon_meta']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extension 'colcon_meta'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extensions ['ros']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/collect_data) by extension 'ros'
+[0.125s] DEBUG:colcon.colcon_core.package_identification:Package 'src/collect_data' with type 'ros.ament_python' and name 'collect_data'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extensions ['ignore', 'ignore_ament_install']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extension 'ignore'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extension 'ignore_ament_install'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extensions ['colcon_meta']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extension 'colcon_meta'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extensions ['ros']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/igris) by extension 'ros'
+[0.126s] DEBUG:colcon.colcon_core.package_identification:Package 'src/igris' with type 'ros.ament_cmake' and name 'igris'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extension 'ignore_ament_install'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extensions ['colcon_meta']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extension 'colcon_meta'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extensions ['ros']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface) by extension 'ros'
+[0.127s] DEBUG:colcon.colcon_core.package_identification:Package 'src/interface' with type 'ros.ament_cmake' and name 'interface'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_igris) by extension 'ros'
+[0.128s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_igris' with type 'ros.ament_cmake' and name 'moveit_igris'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extensions ['ignore', 'ignore_ament_install']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extension 'ignore'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extension 'ignore_ament_install'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extensions ['colcon_pkg']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extension 'colcon_pkg'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extensions ['colcon_meta']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extension 'colcon_meta'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extensions ['ros']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleoperator) by extension 'ros'
+[0.128s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teleoperator' with type 'ros.ament_python' and name 'teleoperator'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extensions ['ignore', 'ignore_ament_install']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extension 'ignore'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extension 'ignore_ament_install'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extensions ['colcon_pkg']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extension 'colcon_pkg'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extensions ['colcon_meta']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extension 'colcon_meta'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extensions ['ros']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_igris) by extension 'ros'
+[0.129s] DEBUG:colcon.colcon_core.package_identification:Package 'src/urdf_igris' with type 'ros.ament_cmake' and name 'urdf_igris'
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.141s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/josh/Igris_c_ros2_ws/install/moveit_igris' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.141s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/josh/Igris_c_ros2_ws/install/urdf_igris' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.141s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/josh/Igris_c_ros2_ws/install/teleoperator' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.141s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/josh/Igris_c_ros2_ws/install/interface' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.141s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/josh/Igris_c_ros2_ws/install/igris' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.141s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/josh/Igris_c_ros2_ws/install/collect_data' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.141s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/josh/Igris_c_ros2_ws/install/camera' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.141s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/josh/Igris_c_ros2_ws/install/Igris' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.141s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/josh/Igris_c_ros2_ws/install/moveit_igris' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.142s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/josh/Igris_c_ros2_ws/install/urdf_igris' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.142s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/josh/Igris_c_ros2_ws/install/interface' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.142s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/josh/Igris_c_ros2_ws/install/igris' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.142s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/josh/Igris_c_ros2_ws/install
+[0.143s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 381 installed packages in /opt/ros/jazzy
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'cmake_args' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'cmake_target' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'cmake_clean_cache' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'cmake_clean_first' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'cmake_force_configure' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'ament_cmake_args' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'catkin_cmake_args' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'Igris' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.179s] DEBUG:colcon.colcon_core.verb:Building package 'Igris' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/Igris', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/Igris', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/Igris', 'symlink_install': False, 'test_result_base': None}
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_args' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_target' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/camera', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/camera', 'symlink_install': False, 'test_result_base': None}
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'cmake_clean_cache' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'collect_data' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'collect_data' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/collect_data', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/collect_data', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/collect_data', 'symlink_install': False, 'test_result_base': None}
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'cmake_clean_cache' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'igris' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'igris' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/igris', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/igris', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/igris', 'symlink_install': False, 'test_result_base': None}
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/interface', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/interface', 'symlink_install': False, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'teleoperator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'teleoperator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/teleoperator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/teleoperator', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/teleoperator', 'symlink_install': False, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'urdf_igris' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'urdf_igris' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/urdf_igris', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/urdf_igris', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/urdf_igris', 'symlink_install': False, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'moveit_igris' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_igris' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josh/Igris_c_ros2_ws/build/moveit_igris', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josh/Igris_c_ros2_ws/install/moveit_igris', 'merge_install': False, 'path': '/home/josh/Igris_c_ros2_ws/src/moveit_igris', 'symlink_install': False, 'test_result_base': None}
+[0.181s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.182s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.182s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/urdf_igris' with build type 'ament_cmake'
+[0.182s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/josh/Igris_c_ros2_ws/src/urdf_igris'
+[0.183s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.184s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.184s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.186s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/Igris' with build type 'ament_python'
+[0.186s] Level 1:colcon.colcon_core.shell:create_environment_hook('Igris', 'ament_prefix_path')
+[0.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/hook/ament_prefix_path.ps1'
+[0.187s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/hook/ament_prefix_path.dsv'
+[0.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/hook/ament_prefix_path.sh'
+[0.187s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.187s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.190s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/camera' with build type 'ament_python'
+[0.190s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera', 'ament_prefix_path')
+[0.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/hook/ament_prefix_path.ps1'
+[0.190s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/hook/ament_prefix_path.dsv'
+[0.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/hook/ament_prefix_path.sh'
+[0.191s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.191s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.193s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/collect_data' with build type 'ament_python'
+[0.193s] Level 1:colcon.colcon_core.shell:create_environment_hook('collect_data', 'ament_prefix_path')
+[0.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/hook/ament_prefix_path.ps1'
+[0.193s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/hook/ament_prefix_path.dsv'
+[0.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/hook/ament_prefix_path.sh'
+[0.194s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.194s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.196s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/igris' with build type 'ament_cmake'
+[0.196s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/josh/Igris_c_ros2_ws/src/igris'
+[0.196s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.196s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.199s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/interface' with build type 'ament_cmake'
+[0.199s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/josh/Igris_c_ros2_ws/src/interface'
+[0.199s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.199s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.202s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/teleoperator' with build type 'ament_python'
+[0.202s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleoperator', 'ament_prefix_path')
+[0.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/hook/ament_prefix_path.ps1'
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/hook/ament_prefix_path.dsv'
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/hook/ament_prefix_path.sh'
+[0.203s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.203s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/josh/Igris_c_ros2_ws/src/urdf_igris -DCMAKE_INSTALL_PREFIX=/home/josh/Igris_c_ros2_ws/install/urdf_igris
+[0.362s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/josh/Igris_c_ros2_ws/src/Igris'
+[0.362s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.362s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.517s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/josh/Igris_c_ros2_ws/src/camera'
+[0.517s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.517s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.675s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/josh/Igris_c_ros2_ws/src/collect_data'
+[0.675s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.675s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/josh/Igris_c_ros2_ws/src/igris -DCMAKE_INSTALL_PREFIX=/home/josh/Igris_c_ros2_ws/install/igris
+[0.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/josh/Igris_c_ros2_ws/src/interface -DCMAKE_INSTALL_PREFIX=/home/josh/Igris_c_ros2_ws/install/interface
+[0.849s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/josh/Igris_c_ros2_ws/src/teleoperator'
+[0.849s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.849s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.857s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/josh/Igris_c_ros2_ws/src/urdf_igris -DCMAKE_INSTALL_PREFIX=/home/josh/Igris_c_ros2_ws/install/urdf_igris
+[0.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/urdf_igris -- -j16 -l16
+[0.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/urdf_igris -- -j16 -l16
+[0.903s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/urdf_igris
+[0.926s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urdf_igris)
+[0.927s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/urdf_igris
+[0.928s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris' for CMake module files
+[0.929s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris' for CMake config files
+[0.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdf_igris', 'cmake_prefix_path')
+[0.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/hook/cmake_prefix_path.ps1'
+[0.930s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/hook/cmake_prefix_path.dsv'
+[0.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/hook/cmake_prefix_path.sh'
+[0.931s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/bin'
+[0.931s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/lib/pkgconfig/urdf_igris.pc'
+[0.931s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/lib/python3.12/site-packages'
+[0.931s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/bin'
+[0.932s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.ps1'
+[0.932s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.dsv'
+[0.932s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.sh'
+[0.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.bash'
+[0.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.zsh'
+[0.934s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/colcon-core/packages/urdf_igris)
+[0.934s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urdf_igris)
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris' for CMake module files
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris' for CMake config files
+[0.935s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdf_igris', 'cmake_prefix_path')
+[0.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/hook/cmake_prefix_path.ps1'
+[0.935s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/hook/cmake_prefix_path.dsv'
+[0.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/hook/cmake_prefix_path.sh'
+[0.936s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/bin'
+[0.936s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/lib/pkgconfig/urdf_igris.pc'
+[0.936s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/lib/python3.12/site-packages'
+[0.936s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/urdf_igris/bin'
+[0.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.ps1'
+[0.937s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.dsv'
+[0.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.sh'
+[0.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.bash'
+[0.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.zsh'
+[0.938s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/urdf_igris/share/colcon-core/packages/urdf_igris)
+[0.938s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/josh/Igris_c_ros2_ws/src/moveit_igris' with build type 'ament_cmake'
+[0.938s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/josh/Igris_c_ros2_ws/src/moveit_igris'
+[0.938s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.938s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.945s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/josh/Igris_c_ros2_ws/src/moveit_igris -DCMAKE_INSTALL_PREFIX=/home/josh/Igris_c_ros2_ws/install/moveit_igris
+[1.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/src/collect_data': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/collect_data/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/collect_data build --build-base /home/josh/Igris_c_ros2_ws/build/collect_data/build install --record /home/josh/Igris_c_ros2_ws/build/collect_data/install.log --single-version-externally-managed install_data
+[1.361s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/src/Igris': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/Igris/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/Igris build --build-base /home/josh/Igris_c_ros2_ws/build/Igris/build install --record /home/josh/Igris_c_ros2_ws/build/Igris/install.log --single-version-externally-managed install_data
+[1.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/src/camera': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera build --build-base /home/josh/Igris_c_ros2_ws/build/camera/build install --record /home/josh/Igris_c_ros2_ws/build/camera/install.log --single-version-externally-managed install_data
+[1.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/src/teleoperator': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/teleoperator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/teleoperator/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleoperator build --build-base /home/josh/Igris_c_ros2_ws/build/teleoperator/build install --record /home/josh/Igris_c_ros2_ws/build/teleoperator/install.log --single-version-externally-managed install_data
+[1.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris' returned '0': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/josh/Igris_c_ros2_ws/src/moveit_igris -DCMAKE_INSTALL_PREFIX=/home/josh/Igris_c_ros2_ws/install/moveit_igris
+[1.550s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/moveit_igris -- -j16 -l16
+[1.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris' returned '0': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/moveit_igris -- -j16 -l16
+[1.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/moveit_igris
+[1.598s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_igris)
+[1.598s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris' for CMake module files
+[1.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/moveit_igris' returned '0': CMAKE_PREFIX_PATH=/home/josh/Igris_c_ros2_ws/install/urdf_igris:/home/josh/Igris_c_ros2_ws/install/moveit_igris:/home/josh/Igris_c_ros2_ws/install/interface:/home/josh/Igris_c_ros2_ws/install/igris:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/moveit_igris
+[1.598s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris' for CMake config files
+[1.599s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_igris', 'cmake_prefix_path')
+[1.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/hook/cmake_prefix_path.ps1'
+[1.599s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/hook/cmake_prefix_path.dsv'
+[1.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/hook/cmake_prefix_path.sh'
+[1.600s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/bin'
+[1.600s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/lib/pkgconfig/moveit_igris.pc'
+[1.600s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/lib/python3.12/site-packages'
+[1.600s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/bin'
+[1.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.ps1'
+[1.600s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.dsv'
+[1.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.sh'
+[1.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.bash'
+[1.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.zsh'
+[1.602s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/colcon-core/packages/moveit_igris)
+[1.603s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_igris)
+[1.603s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris' for CMake module files
+[1.603s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris' for CMake config files
+[1.603s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_igris', 'cmake_prefix_path')
+[1.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/hook/cmake_prefix_path.ps1'
+[1.604s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/hook/cmake_prefix_path.dsv'
+[1.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/hook/cmake_prefix_path.sh'
+[1.605s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/bin'
+[1.605s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/lib/pkgconfig/moveit_igris.pc'
+[1.605s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/lib/python3.12/site-packages'
+[1.605s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/moveit_igris/bin'
+[1.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.ps1'
+[1.605s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.dsv'
+[1.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.sh'
+[1.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.bash'
+[1.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/moveit_igris/package.zsh'
+[1.607s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/moveit_igris/share/colcon-core/packages/moveit_igris)
+[1.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/josh/Igris_c_ros2_ws/src/igris -DCMAKE_INSTALL_PREFIX=/home/josh/Igris_c_ros2_ws/install/igris
+[1.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/igris -- -j16 -l16
+[1.818s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data' for CMake module files
+[1.819s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/src/collect_data' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/collect_data/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/collect_data build --build-base /home/josh/Igris_c_ros2_ws/build/collect_data/build install --record /home/josh/Igris_c_ros2_ws/build/collect_data/install.log --single-version-externally-managed install_data
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data' for CMake config files
+[1.820s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data/lib'
+[1.820s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data/bin'
+[1.820s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data/lib/pkgconfig/collect_data.pc'
+[1.820s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages'
+[1.820s] Level 1:colcon.colcon_core.shell:create_environment_hook('collect_data', 'pythonpath')
+[1.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/hook/pythonpath.ps1'
+[1.821s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/hook/pythonpath.dsv'
+[1.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/hook/pythonpath.sh'
+[1.822s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/collect_data/bin'
+[1.822s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(collect_data)
+[1.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/package.ps1'
+[1.823s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/package.dsv'
+[1.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/package.sh'
+[1.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/package.bash'
+[1.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data/package.zsh'
+[1.824s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/collect_data/share/colcon-core/packages/collect_data)
+[1.841s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera' for CMake module files
+[1.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/src/camera' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera build --build-base /home/josh/Igris_c_ros2_ws/build/camera/build install --record /home/josh/Igris_c_ros2_ws/build/camera/install.log --single-version-externally-managed install_data
+[1.842s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera' for CMake config files
+[1.842s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera/lib'
+[1.842s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera/bin'
+[1.842s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera/lib/pkgconfig/camera.pc'
+[1.842s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera/lib/python3.12/site-packages'
+[1.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera', 'pythonpath')
+[1.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/hook/pythonpath.ps1'
+[1.843s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/hook/pythonpath.dsv'
+[1.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/hook/pythonpath.sh'
+[1.844s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/camera/bin'
+[1.844s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera)
+[1.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/package.ps1'
+[1.844s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/package.dsv'
+[1.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/package.sh'
+[1.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/package.bash'
+[1.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/camera/share/camera/package.zsh'
+[1.845s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/camera/share/colcon-core/packages/camera)
+[1.846s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris' for CMake module files
+[1.846s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/src/Igris' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/Igris/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/Igris build --build-base /home/josh/Igris_c_ros2_ws/build/Igris/build install --record /home/josh/Igris_c_ros2_ws/build/Igris/install.log --single-version-externally-managed install_data
+[1.847s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris' for CMake config files
+[1.847s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris/lib'
+[1.847s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris/bin'
+[1.847s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris/lib/pkgconfig/Igris.pc'
+[1.848s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages'
+[1.848s] Level 1:colcon.colcon_core.shell:create_environment_hook('Igris', 'pythonpath')
+[1.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/hook/pythonpath.ps1'
+[1.848s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/hook/pythonpath.dsv'
+[1.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/hook/pythonpath.sh'
+[1.849s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/Igris/bin'
+[1.849s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Igris)
+[1.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/package.ps1'
+[1.849s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/package.dsv'
+[1.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/package.sh'
+[1.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/package.bash'
+[1.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/Igris/share/Igris/package.zsh'
+[1.850s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/Igris/share/colcon-core/packages/Igris)
+[1.851s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator' for CMake module files
+[1.851s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/src/teleoperator' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/teleoperator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/teleoperator/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleoperator build --build-base /home/josh/Igris_c_ros2_ws/build/teleoperator/build install --record /home/josh/Igris_c_ros2_ws/build/teleoperator/install.log --single-version-externally-managed install_data
+[1.852s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator' for CMake config files
+[1.852s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator/lib'
+[1.852s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator/bin'
+[1.852s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator/lib/pkgconfig/teleoperator.pc'
+[1.852s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator/lib/python3.12/site-packages'
+[1.852s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleoperator', 'pythonpath')
+[1.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/hook/pythonpath.ps1'
+[1.853s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/hook/pythonpath.dsv'
+[1.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/hook/pythonpath.sh'
+[1.853s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/teleoperator/bin'
+[1.853s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleoperator)
+[1.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/package.ps1'
+[1.854s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/package.dsv'
+[1.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/package.sh'
+[1.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/package.bash'
+[1.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/teleoperator/share/teleoperator/package.zsh'
+[1.855s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/teleoperator/share/colcon-core/packages/teleoperator)
+[3.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/josh/Igris_c_ros2_ws/src/interface -DCMAKE_INSTALL_PREFIX=/home/josh/Igris_c_ros2_ws/install/interface
+[3.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/interface -- -j16 -l16
+[5.358s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/interface -- -j16 -l16
+[5.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/interface
+[5.420s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interface)
+[5.420s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface' for CMake module files
+[5.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/interface
+[5.421s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface' for CMake config files
+[5.421s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'cmake_prefix_path')
+[5.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/cmake_prefix_path.ps1'
+[5.422s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/cmake_prefix_path.dsv'
+[5.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/cmake_prefix_path.sh'
+[5.423s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/lib'
+[5.423s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'ld_library_path_lib')
+[5.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/ld_library_path_lib.ps1'
+[5.423s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/ld_library_path_lib.dsv'
+[5.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/ld_library_path_lib.sh'
+[5.424s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/bin'
+[5.424s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/lib/pkgconfig/interface.pc'
+[5.424s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/lib/python3.12/site-packages'
+[5.424s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'pythonpath')
+[5.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/pythonpath.ps1'
+[5.424s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/pythonpath.dsv'
+[5.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/pythonpath.sh'
+[5.425s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/bin'
+[5.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.ps1'
+[5.426s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.dsv'
+[5.426s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.sh'
+[5.426s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.bash'
+[5.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.zsh'
+[5.427s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/interface/share/colcon-core/packages/interface)
+[5.427s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interface)
+[5.427s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface' for CMake module files
+[5.428s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface' for CMake config files
+[5.428s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'cmake_prefix_path')
+[5.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/cmake_prefix_path.ps1'
+[5.428s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/cmake_prefix_path.dsv'
+[5.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/cmake_prefix_path.sh'
+[5.429s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/lib'
+[5.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'ld_library_path_lib')
+[5.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/ld_library_path_lib.ps1'
+[5.430s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/ld_library_path_lib.dsv'
+[5.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/ld_library_path_lib.sh'
+[5.430s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/bin'
+[5.430s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/lib/pkgconfig/interface.pc'
+[5.431s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/lib/python3.12/site-packages'
+[5.431s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'pythonpath')
+[5.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/pythonpath.ps1'
+[5.431s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/pythonpath.dsv'
+[5.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/hook/pythonpath.sh'
+[5.432s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/interface/bin'
+[5.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.ps1'
+[5.433s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.dsv'
+[5.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.sh'
+[5.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.bash'
+[5.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/interface/share/interface/package.zsh'
+[5.435s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/interface/share/colcon-core/packages/interface)
+[8.118s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/igris -- -j16 -l16
+[8.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josh/Igris_c_ros2_ws/build/igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/igris
+[8.140s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(igris)
+[8.140s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josh/Igris_c_ros2_ws/build/igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/igris
+[8.140s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris' for CMake module files
+[8.141s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris' for CMake config files
+[8.141s] Level 1:colcon.colcon_core.shell:create_environment_hook('igris', 'cmake_prefix_path')
+[8.141s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/hook/cmake_prefix_path.ps1'
+[8.142s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/hook/cmake_prefix_path.dsv'
+[8.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/hook/cmake_prefix_path.sh'
+[8.142s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/lib'
+[8.142s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/bin'
+[8.142s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/lib/pkgconfig/igris.pc'
+[8.143s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/lib/python3.12/site-packages'
+[8.143s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/bin'
+[8.143s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.ps1'
+[8.143s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.dsv'
+[8.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.sh'
+[8.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.bash'
+[8.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.zsh'
+[8.144s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/igris/share/colcon-core/packages/igris)
+[8.145s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(igris)
+[8.145s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris' for CMake module files
+[8.145s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris' for CMake config files
+[8.145s] Level 1:colcon.colcon_core.shell:create_environment_hook('igris', 'cmake_prefix_path')
+[8.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/hook/cmake_prefix_path.ps1'
+[8.146s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/hook/cmake_prefix_path.dsv'
+[8.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/hook/cmake_prefix_path.sh'
+[8.146s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/lib'
+[8.146s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/bin'
+[8.147s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/lib/pkgconfig/igris.pc'
+[8.147s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/lib/python3.12/site-packages'
+[8.147s] Level 1:colcon.colcon_core.environment:checking '/home/josh/Igris_c_ros2_ws/install/igris/bin'
+[8.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.ps1'
+[8.147s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.dsv'
+[8.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.sh'
+[8.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.bash'
+[8.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.zsh'
+[8.149s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josh/Igris_c_ros2_ws/install/igris/share/colcon-core/packages/igris)
+[8.149s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.149s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.149s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.149s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.154s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.154s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.154s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.165s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.165s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/josh/Igris_c_ros2_ws/install/local_setup.ps1'
+[8.166s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/josh/Igris_c_ros2_ws/install/_local_setup_util_ps1.py'
+[8.166s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/josh/Igris_c_ros2_ws/install/setup.ps1'
+[8.167s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/josh/Igris_c_ros2_ws/install/local_setup.sh'
+[8.167s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/josh/Igris_c_ros2_ws/install/_local_setup_util_sh.py'
+[8.168s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/josh/Igris_c_ros2_ws/install/setup.sh'
+[8.168s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/josh/Igris_c_ros2_ws/install/local_setup.bash'
+[8.169s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/josh/Igris_c_ros2_ws/install/setup.bash'
+[8.169s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/josh/Igris_c_ros2_ws/install/local_setup.zsh'
+[8.170s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/josh/Igris_c_ros2_ws/install/setup.zsh'

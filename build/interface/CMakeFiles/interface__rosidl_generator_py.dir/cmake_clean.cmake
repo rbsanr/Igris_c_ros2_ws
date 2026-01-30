@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/srv/_move_joints_s.c.o"
   "CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/srv/_move_joints_s.c.o.d"
-  "rosidl_generator_py/interface/libinterface__rosidl_generator_py.pdb"
-  "rosidl_generator_py/interface/libinterface__rosidl_generator_py.so"
+  "libinterface__rosidl_generator_py.pdb"
+  "libinterface__rosidl_generator_py.so"
 )
 
 # Per-language clean rules from dependency scanning.

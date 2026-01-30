@@ -1,0 +1,16 @@
+LICENSE
+package.xml
+setup.cfg
+setup.py
+../../build/Igris/Igris.egg-info/PKG-INFO
+../../build/Igris/Igris.egg-info/SOURCES.txt
+../../build/Igris/Igris.egg-info/dependency_links.txt
+../../build/Igris/Igris.egg-info/requires.txt
+../../build/Igris/Igris.egg-info/top_level.txt
+../../build/Igris/Igris.egg-info/zip-safe
+Igris/__init__.py
+Igris/robot_controller.py
+resource/Igris
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

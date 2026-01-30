@@ -1,0 +1,24 @@
+[0.469s] Invoking command in '/home/josh/Igris_c_ros2_ws/build/igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/igris -- -j16 -l16
+[0.540s] [ 50%] [32m[1mLinking CXX executable igris[0m
+[1.037s] [100%] Built target igris
+[1.047s] Invoked command in '/home/josh/Igris_c_ros2_ws/build/igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/igris -- -j16 -l16
+[1.048s] Invoking command in '/home/josh/Igris_c_ros2_ws/build/igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/igris
+[1.055s] -- Install configuration: ""
+[1.055s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/lib/igris/igris
+[1.067s] -- Set non-toolchain portion of runtime path of "/home/josh/Igris_c_ros2_ws/install/igris/lib/igris/igris" to ""
+[1.067s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/ament_index/resource_index/package_run_dependencies/igris
+[1.068s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/ament_index/resource_index/parent_prefix_path/igris
+[1.068s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/ament_prefix_path.sh
+[1.068s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/ament_prefix_path.dsv
+[1.068s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/path.sh
+[1.068s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/path.dsv
+[1.068s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.bash
+[1.068s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.sh
+[1.068s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.zsh
+[1.068s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.dsv
+[1.068s] -- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.dsv
+[1.068s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/ament_index/resource_index/packages/igris
+[1.068s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/cmake/igrisConfig.cmake
+[1.069s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/cmake/igrisConfig-version.cmake
+[1.069s] -- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.xml
+[1.070s] Invoked command in '/home/josh/Igris_c_ros2_ws/build/igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/igris

@@ -1,0 +1,137 @@
+[0.027s] Invoking command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/josh/Igris_c_ros2_ws/src/urdf_igris -DCMAKE_INSTALL_PREFIX=/home/josh/Igris_c_ros2_ws/install/urdf_igris
+[0.500s] -- The C compiler identification is GNU 13.3.0
+[0.501s] -- The CXX compiler identification is GNU 13.3.0
+[0.501s] -- Detecting C compiler ABI info
+[0.501s] -- Detecting C compiler ABI info - done
+[0.501s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.501s] -- Detecting C compile features
+[0.501s] -- Detecting C compile features - done
+[0.501s] -- Detecting CXX compiler ABI info
+[0.501s] -- Detecting CXX compiler ABI info - done
+[0.501s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.501s] -- Detecting CXX compile features
+[0.501s] -- Detecting CXX compile features - done
+[0.501s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.501s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.528s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.615s] -- Added test 'lint_cmake' to check CMake code style
+[0.620s] -- Added test 'xmllint' to check XML markup files
+[0.621s] -- Configuring done (0.6s)
+[0.624s] -- Generating done (0.0s)
+[0.626s] -- Build files have been written to: /home/josh/Igris_c_ros2_ws/build/urdf_igris
+[0.675s] Invoked command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/josh/Igris_c_ros2_ws/src/urdf_igris -DCMAKE_INSTALL_PREFIX=/home/josh/Igris_c_ros2_ws/install/urdf_igris
+[0.676s] Invoking command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/urdf_igris -- -j16 -l16
+[0.713s] Invoked command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/josh/Igris_c_ros2_ws/build/urdf_igris -- -j16 -l16
+[0.721s] Invoking command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/urdf_igris
+[0.728s] -- Install configuration: ""
+[0.728s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf
+[0.728s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/igris_c_v2_parallel.urdf
+[0.728s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/igris_c_v2.urdf
+[0.728s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/right_hand_igris_c.urdf
+[0.729s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes
+[0.729s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2
+[0.729s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Pitch_Right.stl
+[0.729s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Pitch_Right.stl
+[0.729s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Motor_Output_Front_Right.stl
+[0.729s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Parallel_Front_Left.stl
+[0.729s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Roll_B.stl
+[0.730s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Flange_Back_Right.stl
+[0.730s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_Right.stl
+[0.730s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Roll_Left.stl
+[0.730s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Flange_Back_Left.stl
+[0.730s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Parallel_Back_Left.stl
+[0.730s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Coupler_Front_Left.stl
+[0.731s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_Left.stl
+[0.731s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Parallel_Out_Left.stl
+[0.731s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Flange_Right.stl
+[0.731s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Roll_Left.stl
+[0.731s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Flange_Out_Left.stl
+[0.731s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Roll_Right.stl
+[0.731s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Airforce_R_v1.stl
+[0.732s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Parallel_Out_Right.stl
+[0.732s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Roll_Right.stl
+[0.732s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Pitch_Left.stl
+[0.732s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Motor_Output_Front_Left.stl
+[0.732s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Universal_Back_Left.stl
+[0.732s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Flange_Out_Right.stl
+[0.733s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Flange_In_Right.stl
+[0.733s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Neck_Pitch.stl
+[0.733s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Parallel_In_Right.stl
+[0.733s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Universal_Front_Right.stl
+[0.733s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Coupler_Back_Left.stl
+[0.733s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Elbow_Pitch_Right.stl
+[0.733s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Yaw_Left.stl
+[0.733s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Roll.stl
+[0.734s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Parallel_Left.stl
+[0.734s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Yaw_B.stl
+[0.734s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Shoe_v4.stl
+[0.734s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hand_Left.stl
+[0.734s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Flange_Left.stl
+[0.734s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Knee_Pitch_Right.stl
+[0.734s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Shoe_v5.stl
+[0.734s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Parallel_Front_Right.stl
+[0.734s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Pitch_Right.stl
+[0.734s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Pitch_Left.stl
+[0.735s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Universal_Back_Right.stl
+[0.735s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Pitch.stl
+[0.735s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_CirCut.stl
+[0.735s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Flange_Front_Right.stl
+[0.735s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Parallel_Back_Right.stl
+[0.735s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Roll_Left.stl
+[0.735s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Motor_Output_Back_Left.stl
+[0.735s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Yaw_Right.stl
+[0.736s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Flange_Front_Left.stl
+[0.736s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Roll_Right.stl
+[0.736s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Elbow_Pitch_Left.stl
+[0.736s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hand_Right.stl
+[0.736s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Pitch_B.stl
+[0.736s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Airforce_L_v1.stl
+[0.736s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Flange_In_Left.stl
+[0.736s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Yaw_Left.stl
+[0.737s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Coupler_Front_Right.stl
+[0.737s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Motor_Output_Back_Right.stl
+[0.737s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Neck_Yaw.stl
+[0.737s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Right.stl
+[0.737s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Universal_Front_Left.stl
+[0.737s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_RecCut.stl
+[0.737s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Yaw_Right.stl
+[0.738s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Coupler_Back_Right.stl
+[0.738s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Shoe_v3_visual.stl
+[0.738s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Parallel_In_Left.stl
+[0.738s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Yaw.stl
+[0.738s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Pitch_Right.stl
+[0.738s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Pitch_Left.stl
+[0.738s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Left.stl
+[0.738s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Pelvis.stl
+[0.739s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Waist_Parallel_Right.stl
+[0.739s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Knee_Pitch_Left.stl
+[0.739s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Pitch_Left.stl
+[0.739s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Shoe_v3_collision.stl
+[0.739s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand
+[0.739s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Thumb_Proximal_Right.stl
+[0.739s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Finger_Middle.stl
+[0.739s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Thumb_Distal_Left.stl
+[0.740s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Thumb_Proximal_Left.stl
+[0.740s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Thumb_Middle_Right.stl
+[0.740s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Palm_Right.stl
+[0.740s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Palm_Left.stl
+[0.740s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Finger_Distal.stl
+[0.740s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Thumb_Middle_Left.stl
+[0.740s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/meshes/igris_c_hand/Thumb_Distal_Right.stl
+[0.740s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/urdf/left_hand_igris_c.urdf
+[0.741s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/ament_index/resource_index/package_run_dependencies/urdf_igris
+[0.741s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/ament_index/resource_index/parent_prefix_path/urdf_igris
+[0.741s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/environment/ament_prefix_path.sh
+[0.741s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/environment/ament_prefix_path.dsv
+[0.741s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/environment/path.sh
+[0.741s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/environment/path.dsv
+[0.741s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/local_setup.bash
+[0.741s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/local_setup.sh
+[0.742s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/local_setup.zsh
+[0.742s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/local_setup.dsv
+[0.742s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.dsv
+[0.742s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/ament_index/resource_index/packages/urdf_igris
+[0.742s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/cmake/urdf_igrisConfig.cmake
+[0.742s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/cmake/urdf_igrisConfig-version.cmake
+[0.742s] -- Installing: /home/josh/Igris_c_ros2_ws/install/urdf_igris/share/urdf_igris/package.xml
+[0.744s] Invoked command in '/home/josh/Igris_c_ros2_ws/build/urdf_igris' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/josh/Igris_c_ros2_ws/install/teleoperator:/home/josh/Igris_c_ros2_ws/install/collect_data:/home/josh/Igris_c_ros2_ws/install/camera:/home/josh/Igris_c_ros2_ws/install/Igris:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/josh/Igris_c_ros2_ws/build/urdf_igris

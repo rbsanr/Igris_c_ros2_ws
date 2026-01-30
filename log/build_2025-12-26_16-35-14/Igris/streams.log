@@ -1,0 +1,20 @@
+[1.189s] Invoking command in '/home/josh/Igris_c_ros2_ws/src/Igris': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/Igris/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/Igris build --build-base /home/josh/Igris_c_ros2_ws/build/Igris/build install --record /home/josh/Igris_c_ros2_ws/build/Igris/install.log --single-version-externally-managed install_data
+[1.399s] running egg_info
+[1.415s] writing ../../build/Igris/Igris.egg-info/PKG-INFO
+[1.415s] writing dependency_links to ../../build/Igris/Igris.egg-info/dependency_links.txt
+[1.416s] writing requirements to ../../build/Igris/Igris.egg-info/requires.txt
+[1.416s] writing top-level names to ../../build/Igris/Igris.egg-info/top_level.txt
+[1.448s] reading manifest file '../../build/Igris/Igris.egg-info/SOURCES.txt'
+[1.448s] adding license file 'LICENSE'
+[1.449s] writing manifest file '../../build/Igris/Igris.egg-info/SOURCES.txt'
+[1.449s] running build
+[1.449s] running build_py
+[1.449s] running install
+[1.453s] running install_lib
+[1.470s] running install_data
+[1.470s] running install_egg_info
+[1.487s] removing '/home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages/Igris-0.0.0-py3.12.egg-info' (and everything under it)
+[1.487s] Copying ../../build/Igris/Igris.egg-info to /home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages/Igris-0.0.0-py3.12.egg-info
+[1.488s] running install_scripts
+[1.596s] writing list of installed files to '/home/josh/Igris_c_ros2_ws/build/Igris/install.log'
+[1.615s] Invoked command in '/home/josh/Igris_c_ros2_ws/src/Igris' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/josh/Igris_c_ros2_ws/build/Igris/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh/Igris_c_ros2_ws/install/Igris/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/Igris build --build-base /home/josh/Igris_c_ros2_ws/build/Igris/build install --record /home/josh/Igris_c_ros2_ws/build/Igris/install.log --single-version-externally-managed install_data

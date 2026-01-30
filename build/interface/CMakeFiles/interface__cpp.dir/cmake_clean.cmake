@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/interface__cpp"
+  "rosidl_generator_cpp/interface/msg/rosidl_generator_cpp__visibility_control.hpp"
   "rosidl_generator_cpp/interface/srv/detail/move_joints__builder.hpp"
   "rosidl_generator_cpp/interface/srv/detail/move_joints__struct.hpp"
   "rosidl_generator_cpp/interface/srv/detail/move_joints__traits.hpp"

@@ -1,0 +1,16 @@
+/home/josh/Igris_c_ros2_ws/install/igris/lib/igris/igris
+/home/josh/Igris_c_ros2_ws/install/igris/share/ament_index/resource_index/package_run_dependencies/igris
+/home/josh/Igris_c_ros2_ws/install/igris/share/ament_index/resource_index/parent_prefix_path/igris
+/home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/ament_prefix_path.sh
+/home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/ament_prefix_path.dsv
+/home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/path.sh
+/home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/path.dsv
+/home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.bash
+/home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.sh
+/home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.zsh
+/home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.dsv
+/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.dsv
+/home/josh/Igris_c_ros2_ws/install/igris/share/ament_index/resource_index/packages/igris
+/home/josh/Igris_c_ros2_ws/install/igris/share/igris/cmake/igrisConfig.cmake
+/home/josh/Igris_c_ros2_ws/install/igris/share/igris/cmake/igrisConfig-version.cmake
+/home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.xml

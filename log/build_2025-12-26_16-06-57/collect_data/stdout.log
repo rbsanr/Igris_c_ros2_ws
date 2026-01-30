@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing collect_data.egg-info/PKG-INFO
+writing dependency_links to collect_data.egg-info/dependency_links.txt
+writing entry points to collect_data.egg-info/entry_points.txt
+writing requirements to collect_data.egg-info/requires.txt
+writing top-level names to collect_data.egg-info/top_level.txt
+reading manifest file 'collect_data.egg-info/SOURCES.txt'
+writing manifest file 'collect_data.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/josh/Igris_c_ros2_ws/install/collect_data/lib/python3.12/site-packages/collect-data.egg-link (link to .)
+Installing data_collector script to /home/josh/Igris_c_ros2_ws/install/collect_data/lib/collect_data
+
+Installed /home/josh/Igris_c_ros2_ws/build/collect_data
+running symlink_data
+symbolically linking /home/josh/Igris_c_ros2_ws/build/collect_data/resource/collect_data -> /home/josh/Igris_c_ros2_ws/install/collect_data/share/ament_index/resource_index/packages
+symbolically linking /home/josh/Igris_c_ros2_ws/build/collect_data/package.xml -> /home/josh/Igris_c_ros2_ws/install/collect_data/share/collect_data

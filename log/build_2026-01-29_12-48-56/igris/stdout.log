@@ -1,0 +1,20 @@
+[ 50%] [32m[1mLinking CXX executable igris[0m
+[100%] Built target igris
+-- Install configuration: ""
+-- Installing: /home/josh/Igris_c_ros2_ws/install/igris/lib/igris/igris
+-- Set non-toolchain portion of runtime path of "/home/josh/Igris_c_ros2_ws/install/igris/lib/igris/igris" to ""
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/ament_index/resource_index/package_run_dependencies/igris
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/ament_index/resource_index/parent_prefix_path/igris
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/ament_prefix_path.sh
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/path.sh
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/environment/path.dsv
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.bash
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.sh
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.zsh
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/local_setup.dsv
+-- Installing: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.dsv
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/ament_index/resource_index/packages/igris
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/cmake/igrisConfig.cmake
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/cmake/igrisConfig-version.cmake
+-- Up-to-date: /home/josh/Igris_c_ros2_ws/install/igris/share/igris/package.xml

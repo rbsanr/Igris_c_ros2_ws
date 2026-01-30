@@ -1,0 +1,10 @@
+/home/josh/Igris_c_ros2_ws/build/igris/CMakeFiles/uninstall.dir
+/home/josh/Igris_c_ros2_ws/build/igris/CMakeFiles/igris_uninstall.dir
+/home/josh/Igris_c_ros2_ws/build/igris/CMakeFiles/igris.dir
+/home/josh/Igris_c_ros2_ws/build/igris/CMakeFiles/test.dir
+/home/josh/Igris_c_ros2_ws/build/igris/CMakeFiles/edit_cache.dir
+/home/josh/Igris_c_ros2_ws/build/igris/CMakeFiles/rebuild_cache.dir
+/home/josh/Igris_c_ros2_ws/build/igris/CMakeFiles/list_install_components.dir
+/home/josh/Igris_c_ros2_ws/build/igris/CMakeFiles/install.dir
+/home/josh/Igris_c_ros2_ws/build/igris/CMakeFiles/install/local.dir
+/home/josh/Igris_c_ros2_ws/build/igris/CMakeFiles/install/strip.dir
