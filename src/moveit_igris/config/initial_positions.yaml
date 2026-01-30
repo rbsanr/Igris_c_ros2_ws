@@ -1,0 +1,17 @@
+# Default initial positions for IGRIS_C's ros2_control fake system
+
+initial_positions:
+  15_Joint_Shoulder_Pitch_Left: 0.0
+  16_Joint_Shoulder_Roll_Left: 0.0
+  17_Joint_Shoulder_Yaw_Left: 0.0
+  18_Joint_Elbow_Pitch_Left: 0.0
+  19_Joint_Wrist_Yaw_Left: 0.0
+  20_Joint_Wrist_Roll_Left: 0.0
+  21_Joint_Wrist_Pitch_Left: 0.0
+  22_Joint_Shoulder_Pitch_Right: 0.0
+  23_Joint_Shoulder_Roll_Right: 0.0
+  24_Joint_Shoulder_Yaw_Right: 0.0
+  25_Joint_Elbow_Pitch_Right: 0.0
+  26_Joint_Wrist_Yaw_Right: 0.0
+  27_Joint_Wrist_Roll_Right: 0.0
+  28_Joint_Wrist_Pitch_Right: 0.0

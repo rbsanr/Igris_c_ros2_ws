@@ -13,40 +13,78 @@ import math
 # -------------------------------------------------------------------
 # [설정] 로봇 파라미터 & DXL 주소
 # -------------------------------------------------------------------
+# robot_params = [
+#     {"name": "Waist_Yaw",           "ID": 0,   "Publish": 0, "dir": 1},
+#     {"name": "Waist_Roll",          "ID": 1,   "Publish": 0, "dir": 1},
+#     {"name": "Waist_Pitch",         "ID": 2,   "Publish": 0, "dir": 1},
+#     {"name": "Hip_Pitch_L",         "ID": 3,   "Publish": 0, "dir": 1},
+#     {"name": "Hip_Roll_L",          "ID": 4,   "Publish": 0, "dir": 1},
+#     {"name": "Hip_Yaw_L",           "ID": 5,   "Publish": 0, "dir": 1},
+#     {"name": "Knee_Pitch_L",        "ID": 6,   "Publish": 0, "dir": 1},
+#     {"name": "Ankle_Pitch_L",       "ID": 7,   "Publish": 0, "dir": 1},
+#     {"name": "Ankle_Roll_L",        "ID": 8,   "Publish": 0, "dir": 1},
+#     {"name": "Hip_Pitch_R",         "ID": 9,   "Publish": 0, "dir": 1},
+#     {"name": "Hip_Roll_R",          "ID": 10,  "Publish": 0, "dir": 1},
+#     {"name": "Hip_Yaw_R",           "ID": 11,  "Publish": 0, "dir": 1},
+#     {"name": "Knee_Pitch_R",        "ID": 12,  "Publish": 0, "dir": 1},
+#     {"name": "Ankle_Pitch_R",       "ID": 13,  "Publish": 0, "dir": 1},
+#     {"name": "Ankle_Roll_R",        "ID": 14,  "Publish": 0, "dir": 1},
+#     {"name": "Shoulder_Pitch_L",    "ID": 15,  "Publish": 1, "dir": 1},
+#     {"name": "Shoulder_Roll_L",     "ID": 16,  "Publish": 1, "dir": -1},
+#     {"name": "Shoulder_Yaw_L",      "ID": 17,  "Publish": 1, "dir": -1},
+#     {"name": "Elbow_Pitch_L",       "ID": 18,  "Publish": 1, "dir": -1},
+#     {"name": "Wrist_Yaw_L",         "ID": 19,  "Publish": 1, "dir": -1},
+#     {"name": "Wrist_Roll_L",        "ID": 20,  "Publish": 1, "dir": 1},
+#     {"name": "Wrist_Pitch_L",       "ID": 21,  "Publish": 1, "dir": 1},
+#     {"name": "Shoulder_Pitch_R",    "ID": 22,  "Publish": 1, "dir": -1},
+#     {"name": "Shoulder_Roll_R",     "ID": 23,  "Publish": 1, "dir": 1},
+#     {"name": "Shoulder_Yaw_R",      "ID": 24,  "Publish": 1, "dir": -1},
+#     {"name": "Elbow_Pitch_R",       "ID": 25,  "Publish": 1, "dir": 1},
+#     {"name": "Wrist_Yaw_R",         "ID": 26,  "Publish": 1, "dir": -1},
+#     {"name": "Wrist_Roll_R",        "ID": 27,  "Publish": 1, "dir": 1},
+#     {"name": "Wrist_Pitch_R",       "ID": 28,  "Publish": 1, "dir": 1},
+#     {"name": "Neck_Yaw",            "ID": 29,  "Publish": 0, "dir": 1},
+#     {"name": "Neck_Pitch",          "ID": 30,  "Publish": 0, "dir": 1},
+#     {"name": "Gripper_L",           "ID": 31,  "Publish": 1, "dir": 1},
+#     {"name": "Gripper_R",           "ID": 32,  "Publish": 1, "dir": 1},
+# ]
+
 robot_params = [
-    {"name": "Joint_Waist_Yaw",             "ID": 0,        "Publish": 0},
-    {"name": "Joint_Waist_Roll",            "ID": 1,        "Publish": 0},
-    {"name": "Joint_Waist_Pitch",           "ID": 2,        "Publish": 0},
-    {"name": "Joint_Hip_Pitch_Left",        "ID": 3,        "Publish": 0},
-    {"name": "Joint_Hip_Roll_Left",         "ID": 4,        "Publish": 0},
-    {"name": "Joint_Hip_Yaw_Left",          "ID": 5,        "Publish": 0},
-    {"name": "Joint_Knee_Pitch_Left",       "ID": 6,        "Publish": 0},
-    {"name": "Joint_Ankle_Pitch_Left",      "ID": 7,        "Publish": 0},
-    {"name": "Joint_Ankle_Roll_Left",       "ID": 8,        "Publish": 0},
-    {"name": "Joint_Hip_Pitch_Right",       "ID": 9,        "Publish": 0},
-    {"name": "Joint_Hip_Roll_Right",        "ID": 10,       "Publish": 0},
-    {"name": "Joint_Hip_Yaw_Right",         "ID": 11,       "Publish": 0},
-    {"name": "Joint_Knee_Pitch_Right",      "ID": 12,       "Publish": 0},
-    {"name": "Joint_Ankle_Pitch_Right",     "ID": 13,       "Publish": 0},
-    {"name": "Joint_Ankle_Roll_Right",      "ID": 14,       "Publish": 0},
-    {"name": "Joint_Shoulder_Pitch_Left",   "ID": 15,       "Publish": 1},
-    {"name": "Joint_Shoulder_Roll_Left",    "ID": 16,       "Publish": 1},
-    {"name": "Joint_Shoulder_Yaw_Left",     "ID": 17,       "Publish": 1},
-    {"name": "Joint_Elbow_Pitch_Left",      "ID": 18,       "Publish": 1},
-    {"name": "Joint_Wrist_Yaw_Left",        "ID": 19,       "Publish": 1},
-    {"name": "Joint_Wrist_Roll_Left",       "ID": 20,       "Publish": 1},
-    {"name": "Joint_Wrist_Pitch_Left",      "ID": 21,       "Publish": 1},
-    {"name": "Joint_Shoulder_Pitch_Right",  "ID": 22,       "Publish": 1},
-    {"name": "Joint_Shoulder_Roll_Right",   "ID": 23,       "Publish": 1},
-    {"name": "Joint_Shoulder_Yaw_Right",    "ID": 24,       "Publish": 1},
-    {"name": "Joint_Elbow_Pitch_Right",     "ID": 25,       "Publish": 1},
-    {"name": "Joint_Wrist_Yaw_Right",       "ID": 26,       "Publish": 1},
-    {"name": "Joint_Wrist_Roll_Right",      "ID": 27,       "Publish": 1},
-    {"name": "Joint_Wrist_Pitch_Right",     "ID": 28,       "Publish": 1},
-    {"name": "Joint_Neck_Yaw",              "ID": 29,       "Publish": 0},
-    {"name": "Joint_Neck_Pitch",            "ID": 30,       "Publish": 0},
-    {"name": "Joint_Gripper_Left",          "ID": 31,       "Publish": 1},
-    {"name": "Joint_Gripper_Right",         "ID": 32,       "Publish": 1},
+    {"name": "Waist_Yaw",           "ID": 0,   "Publish": 0, "dir": 1},
+    {"name": "Waist_Roll",          "ID": 1,   "Publish": 0, "dir": 1},
+    {"name": "Waist_Pitch",         "ID": 2,   "Publish": 0, "dir": 1},
+    {"name": "Hip_Pitch_L",         "ID": 3,   "Publish": 0, "dir": 1},
+    {"name": "Hip_Roll_L",          "ID": 4,   "Publish": 0, "dir": 1},
+    {"name": "Hip_Yaw_L",           "ID": 5,   "Publish": 0, "dir": 1},
+    {"name": "Knee_Pitch_L",        "ID": 6,   "Publish": 0, "dir": 1},
+    {"name": "Ankle_Pitch_L",       "ID": 7,   "Publish": 0, "dir": 1},
+    {"name": "Ankle_Roll_L",        "ID": 8,   "Publish": 0, "dir": 1},
+    {"name": "Hip_Pitch_R",         "ID": 9,   "Publish": 0, "dir": 1},
+    {"name": "Hip_Roll_R",          "ID": 10,  "Publish": 0, "dir": 1},
+    {"name": "Hip_Yaw_R",           "ID": 11,  "Publish": 0, "dir": 1},
+    {"name": "Knee_Pitch_R",        "ID": 12,  "Publish": 0, "dir": 1},
+    {"name": "Ankle_Pitch_R",       "ID": 13,  "Publish": 0, "dir": 1},
+    {"name": "Ankle_Roll_R",        "ID": 14,  "Publish": 0, "dir": 1},
+    {"name": "Shoulder_Pitch_L",    "ID": 15,  "Publish": 1, "dir": -1},
+    {"name": "Shoulder_Roll_L",     "ID": 16,  "Publish": 1, "dir": -1},
+    {"name": "Shoulder_Yaw_L",      "ID": 17,  "Publish": 1, "dir": 1},
+    {"name": "Elbow_Pitch_L",       "ID": 18,  "Publish": 1, "dir": -1},
+    {"name": "Wrist_Yaw_L",         "ID": 19,  "Publish": 1, "dir": 1},
+    {"name": "Wrist_Roll_L",        "ID": 20,  "Publish": 1, "dir": 1},
+    {"name": "Wrist_Pitch_L",       "ID": 21,  "Publish": 1, "dir": 1},
+    {"name": "Shoulder_Pitch_R",    "ID": 22,  "Publish": 1, "dir": 1},
+    {"name": "Shoulder_Roll_R",     "ID": 23,  "Publish": 1, "dir": -1},
+    {"name": "Shoulder_Yaw_R",      "ID": 24,  "Publish": 1, "dir": 1},
+    {"name": "Elbow_Pitch_R",       "ID": 25,  "Publish": 1, "dir": 1},
+    {"name": "Wrist_Yaw_R",         "ID": 26,  "Publish": 1, "dir": 1},
+    {"name": "Wrist_Roll_R",        "ID": 27,  "Publish": 1, "dir": 1},
+    {"name": "Wrist_Pitch_R",       "ID": 28,  "Publish": 1, "dir": 1},
+    {"name": "Neck_Yaw",            "ID": 29,  "Publish": 0, "dir": 1},
+    {"name": "Neck_Pitch",          "ID": 30,  "Publish": 0, "dir": 1},
+    {"name": "Fing_th_L",           "ID": 31,  "Publish": 1, "dir": -1},
+    {"name": "Fing_all_L",           "ID": 32,  "Publish": 1, "dir": 1},
+    {"name": "Fing_th_R",           "ID": 33,  "Publish": 1, "dir": 1},
+    {"name": "Fing_all_R",           "ID": 34,  "Publish": 1, "dir": -1},
 ]
 
 # Dynamixel Address (X-Series)
@@ -63,7 +101,9 @@ LEN_PRESENT_POSITION    = 4
 
 PROTOCOL_VERSION = 2.0
 DEVICENAME = '/dev/ttyUSB0'
-BAUDRATE = 4000000
+BAUDRATE = 3000000
+# BAUDRATE = 4000000
+
 POSITION_CENTER = 2048
 
 # -------------------------------------------------------------------
@@ -97,33 +137,61 @@ class RobotController(Node):
         self.publish_joints = [j for j in robot_params if j["Publish"] == 1]
         self.publish_motor_ids = [j["ID"] for j in self.publish_joints]
         
-        # 위치 저장용
+        # 위치 저장용 (초기값 0.0)
         self.current_positions = {mid: 0.0 for mid in self.publish_motor_ids}
+
+        # ===== 추가: 이전 값 저장용 =====
+        self.previous_positions = {mid: 0.0 for mid in self.publish_motor_ids}
+        self.max_position_change = 0.5  # 한 번에 최대 0.5 라디안 변화만 허용
         
-        # *** 중요: 시리얼 통신 충돌 방지용 Lock ***
-        # Read 쓰레드와 Service(Write)가 동시에 포트에 접근하면 안됨
+        # IGRIS 로봇 상태 저장
+        self.igris_positions = [0.0] * 31
+        self.igris_data_received = False
+        self.igris_lock = threading.Lock()
+        
+        # 시리얼 통신 충돌 방지용 Lock
+        self.dxl_lock = threading.Lock()
+        
+        # IGRIS 로봇 상태 저장
+        self.igris_positions = [0.0] * 31
+        self.igris_data_received = False
+        self.igris_lock = threading.Lock()
+        
+        # 시리얼 통신 충돌 방지용 Lock
         self.dxl_lock = threading.Lock()
         
         # Dynamixel 초기화
         self.setup_dynamixel()
         
-        # 1. Publisher
-        self.publisher_ = self.create_publisher(JointState, 'joint_states', 10)
-        
-        # 2. Services
-        # (A) 토크 제어 서비스 (/set_torque) - std_srvs/SetBool 사용
-        self.srv_torque = self.create_service(SetBool, 'set_torque', self.callback_set_torque)
-        
-        # (B) 이동 서비스 (여기서는 예시로 커스텀 서비스 로직 구현)
-        self.create_service(MoveJoints, 'move_joints', self.callback_move_joints)
-        self.get_logger().info("Service Ready: /set_torque")
-        
-        # 3. Read Loop 시작
+        # ===== [중요] Read Loop 먼저 시작 =====
+        # initialize_robot에서 현재 위치를 확인하려면 읽기 스레드가 먼저 돌고 있어야 함
         self.read_thread_running = True
         self.read_thread = threading.Thread(target=self.read_loop, daemon=True)
         self.read_thread.start()
         
-        # 4. Timer (Publish)
+        # 첫 데이터를 읽을 시간 확보 (0.2초)
+        time.sleep(0.2)
+        
+        # ===== 1. 초기화 시퀀스 실행 =====
+        self.initialize_robot()
+        
+        # 2. Publisher
+        self.publisher_ = self.create_publisher(JointState, '/igris/target_joint_states', 10)
+        
+        # 3. Subscriber - IGRIS 로봇 상태 구독
+        self.igris_subscriber = self.create_subscription(
+            JointState,
+            '/igris/joint_states',
+            self.igris_callback,
+            10
+        )
+        self.get_logger().info("Subscribed to /igris/joint_states")
+        
+        # 4. Services
+        self.srv_torque = self.create_service(SetBool, 'set_torque', self.callback_set_torque)
+        self.create_service(MoveJoints, 'move_joints', self.callback_move_joints)
+        
+        # 5. Timer (Publish)
         self.timer = self.create_timer(0.01, self.timer_callback)
         
         self.get_logger().info('Robot Controller Started!')
@@ -137,9 +205,7 @@ class RobotController(Node):
         if not self.portHandler.setBaudRate(BAUDRATE):
             raise Exception("Baudrate setting failed")
             
-        # -----------------------------------------------------
-        # [SyncRead 설정]
-        # -----------------------------------------------------
+        # SyncRead 설정
         self.groupSyncRead = GroupSyncRead(
             self.portHandler, self.packetHandler, 
             ADDR_PRESENT_POSITION, LEN_PRESENT_POSITION
@@ -147,9 +213,7 @@ class RobotController(Node):
         for mid in self.publish_motor_ids:
             self.groupSyncRead.addParam(mid)
 
-        # -----------------------------------------------------
-        # [SyncWrite 설정] - 토크, 위치, 속도 제어용
-        # -----------------------------------------------------
+        # SyncWrite 설정
         self.groupSyncWriteTorque = GroupSyncWrite(
             self.portHandler, self.packetHandler, 
             ADDR_TORQUE_ENABLE, LEN_TORQUE_ENABLE
@@ -163,7 +227,7 @@ class RobotController(Node):
             ADDR_PROFILE_VELOCITY, LEN_PROFILE_VELOCITY
         )
         
-        # 초기 설정: Latency Timer, Return Delay Time 최적화
+        # 초기 설정: Return Delay Time 최적화
         self.optimize_communication()
 
     def optimize_communication(self):
@@ -173,155 +237,283 @@ class RobotController(Node):
                 self.packetHandler.write1ByteTxRx(self.portHandler, mid, 9, 0)
         self.get_logger().info("Optimized Return Delay Time.")
 
-    # -------------------------------------------------------------------
-    # [Read Loop] 지속적인 상태 읽기
-    # -------------------------------------------------------------------
-    def read_loop(self):
-        while self.read_thread_running:
-            start = time.time()
-            
-            # *** LOCK 사용 ***
-            with self.dxl_lock:
-                dxl_comm_result = self.groupSyncRead.txRxPacket()
-            
-            if dxl_comm_result == COMM_SUCCESS:
-                new_positions = {}
-                for mid in self.publish_motor_ids:
-                    dxl_value = self.groupSyncRead.getData(mid, ADDR_PRESENT_POSITION, LEN_PRESENT_POSITION)
-                    new_positions[mid] = dxl_to_radian(dxl_value)
-                
-                # Lock 없이 Dictionary 업데이트 (Atomic에 가까움)
-                self.current_positions = new_positions
-            
-            # CPU 점유율 조절 (Latency가 1ms라면 sleep 없이도 가능)
-            time.sleep(0.001)
-
-    # -------------------------------------------------------------------
-    # [Service 1] 토크 On/Off (SyncWrite)
-    # -------------------------------------------------------------------
-    def callback_set_torque(self, request, response):
+    # ===== 초기화 시퀀스 (수정됨) =====
+    def initialize_robot(self):
         """
-        req.data = True (Torque On), False (Torque Off)
-        모든 모터에 대해 일괄 적용
+        1. 모든 모터 토크 ON
+        2. 느린 속도로 모든 조인트를 0으로 이동
+        3. 그리퍼(31, 32) 토크 OFF
+        4. 그리퍼가 특정 위치(<0)라면 대기
+        5. 전체 토크 OFF
         """
-        torque_val = 1 if request.data else 0
-        param_bytes = [torque_val] # 1 byte
+        self.get_logger().info("=" * 50)
+        self.get_logger().info("Starting Robot Initialization...")
+        self.get_logger().info("=" * 50)
         
-        with self.dxl_lock: # 통신 중 다른 작업 차단
+        # Step 1: 토크 켜기
+        self.get_logger().info("Step 1: Enabling torque for all motors...")
+        self.set_all_torque(True)
+        time.sleep(0.5)
+        
+        # Step 2: 모든 조인트를 0으로 천천히 이동
+        self.get_logger().info("Step 2: Moving all joints to zero position (slow)...")
+        
+        all_ids = [j["ID"] for j in robot_params]
+        zero_positions = [0.0] * len(all_ids)
+        slow_velocity = 50  # 느린 속도
+        
+        success = self.move_joints_internal(all_ids, zero_positions, slow_velocity)
+        
+        # 이동할 시간 충분히 대기
+        time.sleep(1.0) 
+
+        # Step 3: 그리퍼(31, 32)만 토크 끄기
+        self.get_logger().info("Step 3: Turning off torque for grippers (31, 32)...")
+        self.set_torque_single(31, False)
+        self.set_torque_single(32, False)
+
+        # Step 4: 그리퍼 위치 대기 (31번 또는 32번이 0보다 작으면 대기)
+        # self.current_positions는 read_loop 스레드에 의해 백그라운드에서 계속 업데이트됨
+        self.get_logger().info("Step 4: Checking gripper positions...")
+
+        gripper_L = self.current_positions.get(31, 0.0)
+        gripper_R = self.current_positions.get(32, 0.0)
+        
+
+        time.sleep(5)
+        # while (gripper_L < 0):
+        #     # CPU 점유율 폭주 방지
+        #     print(gripper_L, gripper_R)
+        #     gripper_L = self.current_positions.get(31, 0.0)
+        #     gripper_R = self.current_positions.get(32, 0.0)
+        #     # print(self.current_positions)
+        #     time.sleep(0.1)
+
+        # Step 5: 모든 토크 해제
+        self.get_logger().info("Step 5: Initialization Done. Disabling all torque...")
+        self.set_all_torque(False)
+        
+        if success:
+            self.get_logger().info("✓ Initialization complete!")
+        else:
+            self.get_logger().warn("⚠ Initialization completed with warnings.")
+        
+        self.get_logger().info("=" * 50)
+
+    # ===== 개별 모터 토크 제어 (추가됨) =====
+    def set_torque_single(self, motor_id, enable):
+        """개별 모터의 토크를 제어 (패킷 직접 전송)"""
+        val = 1 if enable else 0
+        with self.dxl_lock:
+            # GroupSyncWrite가 아닌 개별 Write 사용
+            self.packetHandler.write1ByteTxRx(
+                self.portHandler, motor_id, ADDR_TORQUE_ENABLE, val
+            )
+
+    # ===== 전체 모터 토크 제어 =====
+    def set_all_torque(self, enable):
+        """모든 모터의 토크를 켜거나 끔"""
+        torque_val = 1 if enable else 0
+        param_bytes = [torque_val]
+        
+        with self.dxl_lock:
             self.groupSyncWriteTorque.clearParam()
-            
             for item in robot_params:
                 mid = item["ID"]
                 self.groupSyncWriteTorque.addParam(mid, param_bytes)
-            
             comm_result = self.groupSyncWriteTorque.txPacket()
             
         if comm_result == COMM_SUCCESS:
-            response.success = True
+            return True
+        else:
+            self.get_logger().error("✗ Failed to set torque")
+            return False
+
+    # ===== IGRIS 로봇 상태 콜백 =====
+    def igris_callback(self, msg):
+        """IGRIS 로봇의 joint_states를 받아서 저장"""
+        with self.igris_lock:
+            if len(msg.position) >= 31:
+                self.igris_positions = list(msg.position[:31])
+                if not self.igris_data_received:
+                    self.igris_data_received = True
+                    self.get_logger().info(f"✓ First IGRIS joint state received! ({len(msg.position)} joints)")
+            else:
+                # 데이터 개수가 안 맞으면 경고 (초반에 몇 번 뜰 수 있음)
+                self.get_logger().warn(f"⚠ IGRIS joint mismatch: expected >=31, got {len(msg.position)}", throttle_duration_sec=2.0)
+
+    # -------------------------------------------------------------------
+    # [Read Loop] 지속적인 상태 읽기
+    # -------------------------------------------------------------------
+    # def read_loop(self):
+    #     while self.read_thread_running:
+    #         with self.dxl_lock:
+    #             dxl_comm_result = self.groupSyncRead.txRxPacket()
+            
+    #         if dxl_comm_result == COMM_SUCCESS:
+    #             new_positions = {}
+    #             for mid in self.publish_motor_ids:
+    #                 dxl_value = self.groupSyncRead.getData(mid, ADDR_PRESENT_POSITION, LEN_PRESENT_POSITION)
+    #                 new_positions[mid] = dxl_to_radian(dxl_value)
+                
+    #             # Dictionary 업데이트 (Atomic in Python)
+    #             self.current_positions = new_positions
+            
+    #         time.sleep(0.001)
+
+    def read_loop(self):
+        while self.read_thread_running:
+            try:
+                with self.dxl_lock:
+                    dxl_comm_result = self.groupSyncRead.txRxPacket()
+                
+                if dxl_comm_result == COMM_SUCCESS:
+                    new_positions = {}
+                    
+                    for mid in self.publish_motor_ids:
+                        # ===== 데이터 가용성 확인 =====
+                        if not self.groupSyncRead.isAvailable(mid, ADDR_PRESENT_POSITION, LEN_PRESENT_POSITION):
+                            # 데이터 없으면 이전 값 유지
+                            new_positions[mid] = self.previous_positions.get(mid, 0.0)
+                            continue
+                        
+                        # ===== 값 읽기 =====
+                        dxl_value = self.groupSyncRead.getData(
+                            mid, ADDR_PRESENT_POSITION, LEN_PRESENT_POSITION
+                        )
+                        
+                        # ===== 1. 범위 검증 (Dynamixel은 0~4095) =====
+                        if dxl_value < 0 or dxl_value > 4095:
+                            self.get_logger().warn(
+                                f"Invalid DXL value for motor {mid}: {dxl_value}. Using previous value.",
+                                throttle_duration_sec=1.0
+                            )
+                            new_positions[mid] = self.previous_positions.get(mid, 0.0)
+                            continue
+                        
+                        # ===== 2. 라디안 변환 =====
+                        rad_value = dxl_to_radian(dxl_value)
+                        
+                        # ===== 3. 급격한 변화 감지 (rate limiting) =====
+                        prev_value = self.previous_positions.get(mid, rad_value)
+                        delta = abs(rad_value - prev_value)
+                        
+                        # 급격한 변화는 무시 (통신 에러로 간주)
+                        if delta > self.max_position_change:
+                            self.get_logger().warn(
+                                f"Motor {mid}: Sudden jump detected! "
+                                f"prev={prev_value:.3f}, new={rad_value:.3f}, "
+                                f"delta={delta:.3f}. Ignoring.",
+                                throttle_duration_sec=1.0
+                            )
+                            new_positions[mid] = prev_value  # 이전 값 유지
+                        else:
+                            new_positions[mid] = rad_value
+                    
+                    # 업데이트
+                    self.previous_positions = new_positions.copy()
+                    self.current_positions = new_positions
+                
+                time.sleep(0.001)
+                
+            except Exception as e:
+                self.get_logger().error(f"Read loop error: {str(e)}", throttle_duration_sec=5.0)
+                time.sleep(0.01)
+
+    # -------------------------------------------------------------------
+    # [Service 1] 토크 On/Off
+    # -------------------------------------------------------------------
+    def callback_set_torque(self, request, response):
+        success = self.set_all_torque(request.data)
+        
+        response.success = success
+        if success:
             response.message = f"Torque set to {request.data} for all motors."
         else:
-            response.success = False
             response.message = "Failed to send SyncWrite Torque packet."
             
         return response
 
     # -------------------------------------------------------------------
-    # [Service 2] 모터 이동 (속도 + 위치)
+    # [Service 2] 모터 이동
     # -------------------------------------------------------------------
-    def callback_move_joints(self, request, response):
-        """
-        [ID 기반 제어]
-        request.ids: 움직일 모터 ID 리스트 (예: [15, 16])
-        request.positions: 목표 위치 리스트 (예: [0.0, 1.57])
-        request.velocity: 속도
-        """
-        # 1. request에서 데이터 꺼내기
-        ids = request.ids
-        positions = request.positions
-        velocity = request.velocity
-        
-        # -----------------------------------------------------
-        # [검증] ID 개수와 위치 개수가 다르면 거부
-        # -----------------------------------------------------
+    def move_joints_internal(self, ids, positions, velocity):
+        """내부 함수: 실제 모터 이동 로직"""
         if len(ids) != len(positions):
-            response.success = False
-            response.message = "Error: The number of IDs and Positions must be same."
-            self.get_logger().error(response.message)
-            return response
+            return False
 
         target_ids = []
         target_pos_bytes = []
         target_vel_bytes = []
 
         try:
-            # 공통 속도 변환
             vel_int = int(velocity)
             vel_bytes = split_to_bytes(vel_int, 4)
             
-            valid_cnt = 0
-            
-            # 2. 루프: ID와 Position을 바로 매칭
             for motor_id, pos_rad in zip(ids, positions):
-                
-                # 안전장치: 우리가 관리하는 모터인지 확인 (선택사항)
-                # if motor_id not in self.publish_motor_ids:
-                #     self.get_logger().warn(f"Warning: ID {motor_id} is not in robot_params.")
-                #     continue
-
-                # Radian -> DXL 값 변환
                 pos_int = radian_to_dxl(pos_rad)
                 pos_bytes = split_to_bytes(pos_int, 4)
                 
-                # 전송 리스트에 추가
                 target_ids.append(motor_id)
                 target_pos_bytes.append(pos_bytes)
                 target_vel_bytes.append(vel_bytes)
-                valid_cnt += 1
             
-            if valid_cnt == 0:
-                response.success = False
-                response.message = "No valid IDs provided."
-                return response
+            if not target_ids:
+                return False
 
-            # 3. 통신 (SyncWrite)
             with self.dxl_lock:
-                # (1) 속도 설정
+                # 속도 설정
                 self.groupSyncWriteVel.clearParam()
                 for i, mid in enumerate(target_ids):
                     self.groupSyncWriteVel.addParam(mid, target_vel_bytes[i])
                 self.groupSyncWriteVel.txPacket()
                 
-                # (2) 위치 설정
+                # 위치 설정
                 self.groupSyncWritePos.clearParam()
                 for i, mid in enumerate(target_ids):
                     self.groupSyncWritePos.addParam(mid, target_pos_bytes[i])
                 comm_result = self.groupSyncWritePos.txPacket()
 
-            # 4. 결과 리턴
-            if comm_result == COMM_SUCCESS:
-                response.success = True
-                response.message = f"Success: Moved {valid_cnt} motors."
-            else:
-                response.success = False
-                response.message = "Failed: SyncWrite Packet Error."
+            return comm_result == COMM_SUCCESS
                 
         except Exception as e:
-            self.get_logger().error(f"Callback Error: {str(e)}")
-            response.success = False
-            response.message = str(e)
+            self.get_logger().error(f"Move joints error: {str(e)}")
+            return False
 
+    def callback_move_joints(self, request, response):
+        """Service 콜백"""
+        success = self.move_joints_internal(request.ids, request.positions, request.velocity)
+        response.success = success
+        response.message = "Moved" if success else "Failed"
         return response
+
+    # -------------------------------------------------------------------
+    # [Timer] Joint State 발행
+    # -------------------------------------------------------------------
+    # def timer_callback(self):
+    #     msg = JointState()
+    #     msg.header.stamp = self.get_clock().now().to_msg()
+    #     msg.name = [j["name"] for j in self.publish_joints]
+    #     msg.position = [self.current_positions.get(mid, 0.0) for mid in self.publish_motor_ids]
+    #     self.publisher_.publish(msg)
 
     def timer_callback(self):
         msg = JointState()
         msg.header.stamp = self.get_clock().now().to_msg()
         msg.name = [j["name"] for j in self.publish_joints]
-        msg.position = [self.current_positions[mid] for mid in self.publish_motor_ids]
-        self.publisher_.publish(msg)
         
+        # 발행할 때만 dir 적용! (논리적 변환)
+        msg.position = [
+            self.current_positions.get(j["ID"], 0.0) * j["dir"] 
+            for j in self.publish_joints
+        ]
+        
+        self.publisher_.publish(msg)
+
     def __del__(self):
         self.read_thread_running = False
-        # 포트 닫기 등 정리...
+        if hasattr(self, 'portHandler'):
+            self.portHandler.closePort()
 
 def main(args=None):
     rclpy.init(args=args)

@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'joint = teleoperator.teleop:main',
+            'hand_bridge = teleoperator.hand_bridge:main',
         ],
     },
 )
