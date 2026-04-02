@@ -9,6 +9,7 @@
 #include <igris_sdk/subscriber.hpp>
 #include <iostream>
 #include <mutex>
+#include <set>
 #include <thread>
 #include <iomanip>
 #include <cmath>
@@ -16,6 +17,7 @@
 // ROS2 includes
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/joint_state.hpp>
+#include <control_msgs/msg/joint_trajectory_controller_state.hpp>
 
 #define NUM_MOTORS 31
 
@@ -31,13 +33,13 @@ static const std::array<const char *, 31> MOTOR_NAMES = {
     "Wrist_Back_R", "Neck_Yaw",         "Neck_Pitch"};
 
 static const std::array<const char *, 31> JOINT_NAMES = {
-    "Waist_Yaw",     "Waist_Roll",       "Waist_Pitch",     "Hip_Pitch_L",    "Hip_Roll_L",    "Hip_Yaw_L",    "Knee_Pitch_L",
-    "Ankle_Pitch_L", "Ankle_Roll_L",     "Hip_Pitch_R",     "Hip_Roll_R",     "Hip_Yaw_R",     "Knee_Pitch_R", "Ankle_Pitch_R",
-    "Ankle_Roll_R",  "Shoulder_Pitch_L", "Shoulder_Roll_L", "Shoulder_Yaw_L", "Elbow_Pitch_L", "Wrist_Yaw_L",  "Wrist_Roll_L",
-    "Wrist_Pitch_L", "Shoulder_Pitch_R", "Shoulder_Roll_R", "Shoulder_Yaw_R", "Elbow_Pitch_R", "Wrist_Yaw_R",  "Wrist_Roll_R",
-    "Wrist_Pitch_R", "Neck_Yaw",         "Neck_Pitch"};
+    "Joint_Waist_Yaw",     "Joint_Waist_Roll",       "Joint_Waist_Pitch",     "Joint_Hip_Pitch_Left",    "Joint_Hip_Roll_Left",    "Joint_Hip_Yaw_Left",    "Joint_Knee_Pitch_Left",
+    "Joint_Ankle_Pitch_Left", "Joint_Ankle_Roll_Left",     "Joint_Hip_Pitch_Right",     "Joint_Hip_Roll_Right",     "Joint_Hip_Yaw_Right",     "Joint_Knee_Pitch_Right", "Joint_Ankle_Pitch_Right",
+    "Joint_Ankle_Roll_Right",  "Joint_Shoulder_Pitch_Left", "Joint_Shoulder_Roll_Left", "Joint_Shoulder_Yaw_Left", "Joint_Elbow_Pitch_Left", "Joint_Wrist_Yaw_Left",  "Joint_Wrist_Roll_Left",
+    "Joint_Wrist_Pitch_Left", "Joint_Shoulder_Pitch_Right", "Joint_Shoulder_Roll_Right", "Joint_Shoulder_Yaw_Right", "Joint_Elbow_Pitch_Right", "Joint_Wrist_Yaw_Right",  "Joint_Wrist_Roll_Right",
+    "Joint_Wrist_Pitch_Right", "Joint_Neck_Yaw",         "Joint_Neck_Pitch"};
 
-// Joint position limits
+// JJoint_oint position limits
 static const std::array<float, 31> JOINT_POS_MAX = {
     1.57f, 0.310f, 0.28f,
     0.480f, 2.300f, 1.570f, 2.280f, 0.698f, 0.349f,
@@ -85,13 +87,14 @@ static const std::array<float, 31> MOTOR_POS_MIN = {
 //     2.0, 5.0
 // };
 
+
 // PD gains * 3
 static const std::array<float, NUM_MOTORS> kp = {
     150.0, 75.0, 75.0,
     1500.0, 600.0, 150.0, 1500.0, 900.0, 900.0,
     1500.0, 600.0, 150.0, 1500.0, 900.0, 900.0,
-    150.0, 150.0, 90.0, 90.0, 15.0, 15.0, 15.0,
-    150.0, 150.0, 90.0, 90.0, 15.0, 15.0, 15.0,
+    300.0, 300.0, 180.0, 180.0, 15.0, 5.0, 5.0,
+    300.0, 300.0, 180.0, 180.0, 15.0, 5.0, 5.0,
     6.0, 15.0
 };
 
@@ -99,8 +102,8 @@ static const std::array<float, NUM_MOTORS> kd = {
     0.8, 0.8, 0.8,
     3.0, 0.5, 0.5, 3.0, 1.5, 1.5,
     3.0, 0.5, 0.5, 3.0, 1.5, 1.5,
-    0.5, 0.5, 0.15, 0.15, 0.1, 0.1, 0.1,
-    0.5, 0.5, 0.15, 0.15, 0.1, 0.1, 0.1,
+    0.5, 0.5, 0.15, 0.15, 0.1, 0.05, 0.05,
+    0.5, 0.5, 0.15, 0.15, 0.1, 0.05, 0.05,
     0.05, 0.1
 };
 
@@ -136,7 +139,10 @@ private:
     std::array<float, NUM_MOTORS> initial_motor_pos{};
     std::array<float, NUM_MOTORS> target_joint_pos{};
     std::array<float, NUM_MOTORS> target_motor_pos{};
-    
+    std::array<float, NUM_MOTORS> commanded_joint_pos{};
+    std::array<float, NUM_MOTORS> commanded_motor_pos{};
+    const float MAX_CMD_STEP = 0.003f;  // ~0.9 rad/s at 300Hz
+
     // ===== 추가: 이전 값 저장 및 필터링 =====
     std::array<float, NUM_MOTORS> previous_joint_pos{};
     std::array<float, NUM_MOTORS> previous_motor_pos{};
@@ -291,6 +297,8 @@ private:
                 initial_joint_pos[i] = current_joint_pos[i];
                 target_motor_pos[i] = current_motor_pos[i];
                 target_joint_pos[i] = current_joint_pos[i];
+                commanded_motor_pos[i] = current_motor_pos[i];
+                commanded_joint_pos[i] = current_joint_pos[i];
             }
             first_state_received = true;
             std::cout << "[Info] Initial positions saved (Motor & Joint)" << std::endl;
@@ -331,15 +339,26 @@ private:
                     for (int i = 0; i < NUM_MOTORS; i++) {
                         auto &m = local_cmd.motors()[i];
                         m.id(i);
-                        
-                        float q_target;
+
+                        float target, cmd_prev;
                         if (use_joint_mode) {
-                            q_target = clamp(target_joint_pos[i], JOINT_POS_MIN[i], JOINT_POS_MAX[i]);
+                            target = clamp(target_joint_pos[i], JOINT_POS_MIN[i], JOINT_POS_MAX[i]);
+                            cmd_prev = commanded_joint_pos[i];
                         } else {
-                            q_target = clamp(target_motor_pos[i], MOTOR_POS_MIN[i], MOTOR_POS_MAX[i]);
+                            target = clamp(target_motor_pos[i], MOTOR_POS_MIN[i], MOTOR_POS_MAX[i]);
+                            cmd_prev = commanded_motor_pos[i];
                         }
-                        
-                        m.q(q_target);
+
+                        float diff = target - cmd_prev;
+                        float q_cmd = cmd_prev + clamp(diff, -MAX_CMD_STEP, MAX_CMD_STEP);
+
+                        if (use_joint_mode) {
+                            commanded_joint_pos[i] = q_cmd;
+                        } else {
+                            commanded_motor_pos[i] = q_cmd;
+                        }
+
+                        m.q(q_cmd);
                         m.dq(0.0f);
                         m.tau(0.0f);
                         m.kp(kp[i]);
@@ -449,6 +468,8 @@ public:
             for (int i = 0; i < NUM_MOTORS; i++) {
                 target_joint_pos[i] = current_joint_pos[i];
                 target_motor_pos[i] = current_motor_pos[i];
+                commanded_joint_pos[i] = current_joint_pos[i];
+                commanded_motor_pos[i] = current_motor_pos[i];
             }
             std::cout << "[Info] Target positions initialized to current state" << std::endl;
         }
@@ -691,127 +712,172 @@ public:
     }
 };
 
+using ControllerState = control_msgs::msg::JointTrajectoryControllerState;
+
 class IgrisROS2Bridge : public rclcpp::Node {
 private:
     IgrisController* controller_;
     rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr current_joint_pub_;
-    rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr target_joint_sub_;
+    rclcpp::Subscription<ControllerState>::SharedPtr head_sub_;
+    rclcpp::Subscription<ControllerState>::SharedPtr waist_sub_;
+    rclcpp::Subscription<ControllerState>::SharedPtr left_leg_sub_;
+    rclcpp::Subscription<ControllerState>::SharedPtr right_leg_sub_;
+    rclcpp::Subscription<ControllerState>::SharedPtr left_arm_sub_;
+    rclcpp::Subscription<ControllerState>::SharedPtr right_arm_sub_;
     rclcpp::TimerBase::SharedPtr state_publish_timer_;
     std::chrono::milliseconds publish_period_{20};
+    std::atomic<uint32_t> controller_msg_count_{0};
+    std::atomic<int64_t> last_controller_msg_ms_{0};
+    std::atomic<bool> tracking_enabled_{false};
+    std::atomic<bool> all_controllers_captured_{false};
+    std::set<std::string> captured_controllers_;
+    std::array<float, NUM_MOTORS> first_controller_positions_{};
+    std::mutex first_pos_mutex_;
+    static constexpr int TOTAL_CONTROLLERS = 6;
 
     void PublishCurrentJointState() {
         std::array<float, NUM_MOTORS> current_pos;
-        
+
         if (!controller_->GetCurrentJointPositions(current_pos)) {
             return;
         }
-        
+
         auto msg = sensor_msgs::msg::JointState();
         msg.header.stamp = this->now();
         msg.header.frame_id = "base_link";
-        
+
         msg.name.resize(NUM_MOTORS);
         msg.position.resize(NUM_MOTORS);
         msg.velocity.resize(NUM_MOTORS);
         msg.effort.resize(NUM_MOTORS);
-        
+
         for (int i = 0; i < NUM_MOTORS; i++) {
             msg.name[i] = JOINT_NAMES[i];
             msg.position[i] = current_pos[i];
             msg.velocity[i] = 0.0;
             msg.effort[i] = 0.0;
         }
-        
+
         current_joint_pub_->publish(msg);
     }
 
-    void TargetJointCallback(const sensor_msgs::msg::JointState::SharedPtr msg) {
-        if (msg->position.empty()) {
+    // joint_name 앞의 숫자 prefix (예: "15_Joint_...") 를 파싱해 모터 인덱스 반환
+    // 파싱 실패 또는 범위 초과 시 -1 반환
+    int ParseJointIndex(const std::string& joint_name) {
+        size_t underscore = joint_name.find('_');
+        if (underscore == std::string::npos) return -1;
+        try {
+            int idx = std::stoi(joint_name.substr(0, underscore));
+            if (idx >= 0 && idx < NUM_MOTORS) return idx;
+        } catch (...) {}
+        return -1;
+    }
+
+    void ControllerStateCallback(const ControllerState::SharedPtr msg,
+                                 const std::string& controller_name) {
+        if (msg->joint_names.empty() || msg->reference.positions.empty()) {
             return;
         }
-        
+
+        controller_msg_count_++;
+        last_controller_msg_ms_.store(
+            std::chrono::duration_cast<std::chrono::milliseconds>(
+                std::chrono::steady_clock::now().time_since_epoch()).count());
+
+        // Capture positions from each controller until all 6 are received
+        if (!all_controllers_captured_) {
+            std::lock_guard<std::mutex> lock(first_pos_mutex_);
+            if (!all_controllers_captured_) {
+                for (size_t i = 0; i < msg->joint_names.size() && i < msg->reference.positions.size(); i++) {
+                    int idx = ParseJointIndex(msg->joint_names[i]);
+                    if (idx >= 0) {
+                        first_controller_positions_[idx] = static_cast<float>(msg->reference.positions[i]);
+                    }
+                }
+                captured_controllers_.insert(controller_name);
+                if (static_cast<int>(captured_controllers_.size()) >= TOTAL_CONTROLLERS) {
+                    all_controllers_captured_ = true;
+                    RCLCPP_INFO(rclcpp::get_logger("igris_ros2_bridge"),
+                        "All %d controllers captured", TOTAL_CONTROLLERS);
+                }
+            }
+            return;
+        }
+
+        if (!tracking_enabled_) {
+            return;
+        }
+
         std::array<float, NUM_MOTORS> target_pos;
-        
-        // 현재 "목표" 위치를 기본값으로
         if (!controller_->GetTargetJointPositions(target_pos)) {
             return;
         }
-        
-        // 토픽에 있는 조인트만 업데이트
-        if (!msg->name.empty()) {
-            // exept Wrist_Roll_L and Wrist_Pitch_L
-            for (size_t i = 0; i < msg->name.size() && i < msg->position.size(); i++) {
-                for (int j = 0; j < NUM_MOTORS; j++) {
-                    if (msg->name[i] == JOINT_NAMES[j]) {
-                        if(j != 20 && j != 21) {  // wrist_roll joints are excluded
-                            target_pos[j] = static_cast<float>(msg->position[i]);
-                        }
-                        break;
-                    }
-                }
-            }
-        } else {
-            size_t count = std::min(msg->position.size(), static_cast<size_t>(NUM_MOTORS));
-            for (size_t i = 0; i < count; i++) {
-                target_pos[i] = static_cast<float>(msg->position[i]);
+
+        for (size_t i = 0; i < msg->joint_names.size() && i < msg->reference.positions.size(); i++) {
+            int idx = ParseJointIndex(msg->joint_names[i]);
+            if (idx >= 0) {
+                target_pos[idx] = static_cast<float>(msg->reference.positions[i]);
             }
         }
-        
+
         controller_->SetTargetJointPositions(target_pos);
     }
 
-    // void TargetJointCallback(const sensor_msgs::msg::JointState::SharedPtr msg) {
-    //     if (msg->position.empty()) {
-    //         return;
-    //     }
-        
-    //     std::array<float, NUM_MOTORS> target_pos;
-        
-    //     if (!controller_->GetCurrentJointPositions(target_pos)) {
-    //         return;
-    //     }
-        
-    //     if (!msg->name.empty()) {
-    //         for (size_t i = 0; i < msg->name.size() && i < msg->position.size(); i++) {
-    //             for (int j = 0; j < NUM_MOTORS; j++) {
-    //                 if (msg->name[i] == JOINT_NAMES[j]) {
-    //                     target_pos[j] = static_cast<float>(msg->position[i]);
-    //                     break;
-    //                 }
-    //             }
-    //         }
-    //     } else {
-    //         size_t count = std::min(msg->position.size(), static_cast<size_t>(NUM_MOTORS));
-    //         for (size_t i = 0; i < count; i++) {
-    //             target_pos[i] = static_cast<float>(msg->position[i]);
-    //         }
-    //     }
-        
-    //     controller_->SetTargetJointPositions(target_pos);
-    // }
-
 public:
-    IgrisROS2Bridge(IgrisController* ctrl) 
+    IgrisROS2Bridge(IgrisController* ctrl)
         : Node("igris_ros2_bridge"), controller_(ctrl) {
-        
+
         RCLCPP_INFO(this->get_logger(), "Initializing ROS2 Bridge...");
-        
+
         current_joint_pub_ = this->create_publisher<sensor_msgs::msg::JointState>(
             "/igris/joint_states", 10);
-        
-        target_joint_sub_ = this->create_subscription<sensor_msgs::msg::JointState>(
-            "/igris/target_joint_states", 10,
-            std::bind(&IgrisROS2Bridge::TargetJointCallback, this, std::placeholders::_1));
-        
+
+        head_sub_ = this->create_subscription<ControllerState>(
+            "/head_controller/controller_state", 10,
+            [this](const ControllerState::SharedPtr msg) { ControllerStateCallback(msg, "head"); });
+
+        waist_sub_ = this->create_subscription<ControllerState>(
+            "/waist_controller/controller_state", 10,
+            [this](const ControllerState::SharedPtr msg) { ControllerStateCallback(msg, "waist"); });
+
+        left_leg_sub_ = this->create_subscription<ControllerState>(
+            "/left_leg_controller/controller_state", 10,
+            [this](const ControllerState::SharedPtr msg) { ControllerStateCallback(msg, "left_leg"); });
+
+        right_leg_sub_ = this->create_subscription<ControllerState>(
+            "/right_leg_controller/controller_state", 10,
+            [this](const ControllerState::SharedPtr msg) { ControllerStateCallback(msg, "right_leg"); });
+
+        left_arm_sub_ = this->create_subscription<ControllerState>(
+            "/left_arm_controller/controller_state", 10,
+            [this](const ControllerState::SharedPtr msg) { ControllerStateCallback(msg, "left_arm"); });
+
+        right_arm_sub_ = this->create_subscription<ControllerState>(
+            "/right_arm_controller/controller_state", 10,
+            [this](const ControllerState::SharedPtr msg) { ControllerStateCallback(msg, "right_arm"); });
+
         state_publish_timer_ = this->create_wall_timer(
             publish_period_,
             std::bind(&IgrisROS2Bridge::PublishCurrentJointState, this));
-        
+
         RCLCPP_INFO(this->get_logger(), "ROS2 Bridge initialized");
         RCLCPP_INFO(this->get_logger(), "Publishing: /igris/joint_states (50Hz)");
-        RCLCPP_INFO(this->get_logger(), "Subscribing: /igris/target_joint_states");
-        RCLCPP_INFO(this->get_logger(), "Mode: Direct position control with filtering");
+        RCLCPP_INFO(this->get_logger(), "Subscribing: head, waist, left_leg, right_leg, left_arm, right_arm controller_state");
+        RCLCPP_INFO(this->get_logger(), "Mode: Direct position control from controller reference");
     }
+
+    uint32_t GetControllerMsgCount() const { return controller_msg_count_.load(); }
+    int64_t GetLastControllerMsgMs() const { return last_controller_msg_ms_.load(); }
+    bool IsAllControllersCaptured() const { return all_controllers_captured_.load(); }
+    int GetCapturedCount() {
+        std::lock_guard<std::mutex> lock(first_pos_mutex_);
+        return static_cast<int>(captured_controllers_.size());
+    }
+    std::array<float, NUM_MOTORS> GetFirstControllerPositions() {
+        std::lock_guard<std::mutex> lock(first_pos_mutex_);
+        return first_controller_positions_;
+    }
+    void EnableTracking() { tracking_enabled_ = true; }
 };
 
 int main(int argc, char** argv) {
@@ -824,6 +890,7 @@ int main(int argc, char** argv) {
         
         IgrisController robot(0);
         
+        
         std::cout << "\n=== Initialization Sequence ===" << std::endl;
         robot.BMS_AND_MOTOR_INIT();
         std::this_thread::sleep_for(std::chrono::seconds(2));
@@ -835,7 +902,7 @@ int main(int argc, char** argv) {
         std::this_thread::sleep_for(std::chrono::seconds(1));
         
         robot.StartControl(true);
-        
+
         std::array<float, NUM_MOTORS> current_pos;
         if (robot.GetCurrentJointPositions(current_pos)) {
             std::cout << "\nInitial Joint Positions:" << std::endl;
@@ -843,31 +910,121 @@ int main(int argc, char** argv) {
                 printf("  J%02d (%20s): %7.4f rad\n", i, JOINT_NAMES[i], current_pos[i]);
             }
         }
-        
-        std::cout << "\n=== Testing Smooth Motion ===" << std::endl;
-        std::array<float, NUM_MOTORS> zero_pose = {0.0f};
-        // zero_pose[18] = -1.5f;
-        // zero_pose[25] = -1.5f;
-        zero_pose[30] = -0.2f;
-        robot.MoveToPositions(zero_pose, 3.0, false);
-        
-        while (robot.IsTrajectoryActive()) {
-            float progress = robot.GetTrajectoryProgress();
-            std::cout << "\rProgress: " << std::fixed << std::setprecision(1) 
-                      << (progress * 100) << "%" << std::flush;
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
-        }
-        std::cout << std::endl;
-        
+
         std::cout << "\n=== Starting ROS2 Bridge ===" << std::endl;
         auto ros2_node = std::make_shared<IgrisROS2Bridge>(&robot);
-        
+
+        // Check if controller topics are available (wait up to 3s)
+        std::cout << "\n=== Checking for controller topics (3s)... ===" << std::endl;
+        for (int i = 0; i < 30 && g_running; i++) {
+            rclcpp::spin_some(ros2_node);
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            if (ros2_node->GetControllerMsgCount() > 0) {
+                break;
+            }
+        }
+
+        if (ros2_node->GetControllerMsgCount() > 0 && g_running) {
+            // Controller topics detected - wait for all 6 controllers
+            std::cout << "[Info] Controller topics detected - waiting for all 6 controllers..." << std::endl;
+            while (!ros2_node->IsAllControllersCaptured() && g_running) {
+                rclcpp::spin_some(ros2_node);
+                std::cout << "\rCaptured: " << ros2_node->GetCapturedCount() << "/6" << std::flush;
+                std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            }
+            std::cout << std::endl;
+
+            if (g_running) {
+                auto first_pos = ros2_node->GetFirstControllerPositions();
+                std::cout << "[Info] All controllers captured - moving to controller positions (5s)..." << std::endl;
+                robot.MoveToPositions(first_pos, 5.0, false);
+
+                while (robot.IsTrajectoryActive() && g_running) {
+                    rclcpp::spin_some(ros2_node);
+                    float progress = robot.GetTrajectoryProgress();
+                    std::cout << "\rProgress: " << std::fixed << std::setprecision(1)
+                              << (progress * 100) << "%" << std::flush;
+                    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                }
+                std::cout << std::endl;
+
+                ros2_node->EnableTracking();
+                std::cout << "[Info] Controller tracking enabled" << std::endl;
+            }
+        } else {
+            // No controller topics - move to zero pose first
+            std::cout << "[Info] No controller topics detected - moving to zero pose (5s)..." << std::endl;
+            std::array<float, NUM_MOTORS> zero_pose = {0.0f};
+            zero_pose[30] = 0.3f;
+            robot.MoveToPositions(zero_pose, 5.0, false);
+
+            while (robot.IsTrajectoryActive() && g_running) {
+                float progress = robot.GetTrajectoryProgress();
+                std::cout << "\rProgress: " << std::fixed << std::setprecision(1)
+                          << (progress * 100) << "%" << std::flush;
+                std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            }
+            std::cout << std::endl;
+
+            // Then wait for controller topics to appear
+            std::cout << "[Info] Waiting for controller topics..." << std::endl;
+            while (!ros2_node->IsAllControllersCaptured() && g_running) {
+                rclcpp::spin_some(ros2_node);
+                if (ros2_node->GetCapturedCount() > 0) {
+                    std::cout << "\rCaptured: " << ros2_node->GetCapturedCount() << "/6" << std::flush;
+                }
+                std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            }
+            std::cout << std::endl;
+
+            if (g_running) {
+                auto first_pos = ros2_node->GetFirstControllerPositions();
+                std::cout << "[Info] All controllers captured - moving to controller positions (5s)..." << std::endl;
+                robot.MoveToPositions(first_pos, 5.0, false);
+
+                while (robot.IsTrajectoryActive() && g_running) {
+                    rclcpp::spin_some(ros2_node);
+                    float progress = robot.GetTrajectoryProgress();
+                    std::cout << "\rProgress: " << std::fixed << std::setprecision(1)
+                              << (progress * 100) << "%" << std::flush;
+                    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                }
+                std::cout << std::endl;
+
+                ros2_node->EnableTracking();
+                std::cout << "[Info] Controller tracking enabled" << std::endl;
+            }
+        }
+
         std::cout << "\n=== ROS2 Node Running ===" << std::endl;
         std::cout << "Press Ctrl+C to stop\n" << std::endl;
-        
+
+        constexpr int64_t CONTROLLER_TIMEOUT_MS = 3000;
+        bool was_receiving = false;
+        bool timeout_triggered = false;
+
         while (rclcpp::ok() && g_running) {
             rclcpp::spin_some(ros2_node);
             std::this_thread::sleep_for(std::chrono::milliseconds(10));
+
+            int64_t last_msg_ms = ros2_node->GetLastControllerMsgMs();
+            if (last_msg_ms > 0) {
+                was_receiving = true;
+                timeout_triggered = false;
+            }
+
+            if (was_receiving && last_msg_ms > 0 && !timeout_triggered) {
+                int64_t now_ms = std::chrono::duration_cast<std::chrono::milliseconds>(
+                    std::chrono::steady_clock::now().time_since_epoch()).count();
+                if ((now_ms - last_msg_ms) > CONTROLLER_TIMEOUT_MS) {
+                    RCLCPP_WARN(ros2_node->get_logger(),
+                        "Controller timeout (>3s) - moving all joints to zero");
+                    std::array<float, NUM_MOTORS> zero_pose = {0.0f};
+                    zero_pose[30] = 0.3f;
+                    robot.MoveToPositions(zero_pose, 5.0, false);
+                    timeout_triggered = true;
+                }
+            }
         }
         
         std::cout << "\n=== Cleanup ===" << std::endl;

@@ -9,10 +9,10 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Waist_Yaw.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Waist_Yaw.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -31,15 +31,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Waist_Yaw_B.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Waist_Yaw_B.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Waist_Yaw_B.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Waist_Yaw_B.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -51,15 +51,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Waist_Roll_B.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Waist_Roll_B.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Waist_Roll_B.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Waist_Roll_B.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -71,15 +71,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Waist_Pitch_B.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Waist_Pitch_B.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Waist_Pitch_B.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Waist_Pitch_B.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -92,15 +92,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Hip_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Hip_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Hip_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Hip_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -112,10 +112,10 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Hip_Roll_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Hip_Roll_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -133,15 +133,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -153,10 +153,10 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Knee_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Knee_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -174,15 +174,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Ankle_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Ankle_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -194,10 +194,10 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -216,15 +216,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Hip_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Hip_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Hip_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Hip_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -236,10 +236,10 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Hip_Roll_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Hip_Roll_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -257,15 +257,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Hip_Yaw_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -277,10 +277,10 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Knee_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Knee_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -298,15 +298,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Ankle_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Ankle_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -318,10 +318,10 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Ankle_Roll_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -340,15 +340,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -360,15 +360,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Roll_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Roll_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Roll_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Roll_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -380,15 +380,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Yaw_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Yaw_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Yaw_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Yaw_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -400,15 +400,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Elbow_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Elbow_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Elbow_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Elbow_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -420,10 +420,10 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Wrist_Yaw_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Yaw_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -441,15 +441,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Wrist_Roll_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Roll_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Wrist_Roll_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Roll_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -461,15 +461,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Wrist_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Wrist_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Pitch_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -481,10 +481,10 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Hand_Left.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Hand_Left.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -503,15 +503,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -523,15 +523,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Roll_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Roll_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Roll_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Roll_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -543,15 +543,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Yaw_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Yaw_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Yaw_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Shoulder_Yaw_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -563,15 +563,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Elbow_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Elbow_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Elbow_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Elbow_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -583,10 +583,10 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Wrist_Yaw_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Yaw_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -604,15 +604,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Wrist_Roll_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Roll_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Wrist_Roll_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Roll_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -624,15 +624,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Wrist_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Wrist_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Wrist_Pitch_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -644,10 +644,10 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Hand_Right.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Hand_Right.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -666,15 +666,15 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Neck_Yaw.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Neck_Yaw.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Neck_Yaw.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Neck_Yaw.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -686,10 +686,10 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_igris/urdf/meshes/igris_c_v2/Neck_Pitch.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/josh/Igris_c_ros2_ws/src/urdf_igris/urdf/meshes/igris_c_v2/Neck_Pitch.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <material name="random">
-        <color rgba="0.0706 0.0706 0.0706 0.7"/>
+        <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -799,14 +799,14 @@
     <child link="Link_Ankle_Pitch_Right"/>
     <origin xyz="0.005 0 -0.34" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <limit lower="-0.698131701" upper="0.698131701" effort="1000" velocity="100.0"/>
+    <limit lower="-0.523598776" upper="0.523598776" effort="1000" velocity="100.0"/>
   </joint>
   <joint name="14_Joint_Ankle_Roll_Right" type="revolute">
     <parent link="Link_Ankle_Pitch_Right"/>
     <child link="Link_Ankle_Roll_Right"/>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <axis xyz="1 0 0"/>
-    <limit lower="-0.261799388" upper="0.261799388" effort="1000" velocity="100.0"/>
+    <limit lower="-0.174532925" upper="0.174532925" effort="1000" velocity="100.0"/>
   </joint>
   <!-- LEFT ARM -->
   <joint name="15_Joint_Shoulder_Pitch_Left" type="revolute">
@@ -849,14 +849,16 @@
     <child link="Link_Wrist_Roll_Left"/>
     <origin xyz="0 -0.005 -0.2395 " rpy="0 0 0"/>
     <axis xyz="1 0 0"/>
-    <limit lower="-1.221730476" upper="0.872664626" effort="1000" velocity="100.0"/>
+    <!-- <limit lower="-1.221730476" upper="0.872664626" effort="1000" velocity="100.0"/> -->
+    <limit lower="-1.221730476" upper="1.221730476" effort="1000" velocity="100.0"/>
   </joint>
   <joint name="21_Joint_Wrist_Pitch_Left" type="revolute">
     <parent link="Link_Wrist_Roll_Left"/>
     <child link="Link_Wrist_Pitch_Left"/>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <limit lower="-0.698131701" upper="0.698131701" effort="1000" velocity="100.0"/>
+    <!-- <limit lower="-0.698131701" upper="0.698131701" effort="1000" velocity="100.0"/> -->
+    <limit lower="-1.698131701" upper="1.698131701" effort="1000" velocity="100.0"/>
   </joint>
   <joint name="Left_Hand" type="fixed">
     <parent link="Link_Wrist_Pitch_Left"/>
@@ -904,14 +906,16 @@
     <child link="Link_Wrist_Roll_Right"/>
     <origin xyz="0 0.005 -0.2395" rpy="0 0 0"/>
     <axis xyz="1 0 0"/>
-    <limit lower="-0.872664626" upper="1.221730476" effort="1000" velocity="100.0"/>
+    <limit lower="-1.221730476" upper="1.221730476" effort="1000" velocity="100.0"/>
+    <!-- <limit lower="-0.872664626" upper="1.221730476" effort="1000" velocity="100.0"/> -->
   </joint>
   <joint name="28_Joint_Wrist_Pitch_Right" type="revolute">
     <parent link="Link_Wrist_Roll_Right"/>
     <child link="Link_Wrist_Pitch_Right"/>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <limit lower="-0.698131701" upper="0.698131701" effort="1000" velocity="100.0"/>
+    <limit lower="-1.698131701" upper="1.698131701" effort="1000" velocity="100.0"/>
+    <!-- <limit lower="-0.698131701" upper="0.698131701" effort="1000" velocity="100.0"/> -->
   </joint>
   <joint name="Right_Hand" type="fixed">
     <parent link="Link_Wrist_Pitch_Right"/>
@@ -933,4 +937,166 @@
     <axis xyz="0 1 0"/>
     <limit lower="-0.523598776" upper="0.523598776" effort="1000" velocity="100.0"/>
   </joint>
+
+  <ros2_control name="FakeSystem" type="system">
+    <hardware>
+      <plugin>mock_components/GenericSystem</plugin>
+    </hardware>
+    <joint name="0_Joint_Waist_Yaw">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="1_Joint_Waist_Roll">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="2_Joint_Waist_Pitch">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="3_Joint_Hip_Pitch_Left">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="4_Joint_Hip_Roll_Left">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="5_Joint_Hip_Yaw_Left">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="6_Joint_Knee_Pitch_Left">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="7_Joint_Ankle_Pitch_Left">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="8_Joint_Ankle_Roll_Left">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="9_Joint_Hip_Pitch_Right">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="10_Joint_Hip_Roll_Right">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="11_Joint_Hip_Yaw_Right">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="12_Joint_Knee_Pitch_Right">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="13_Joint_Ankle_Pitch_Right">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="14_Joint_Ankle_Roll_Right">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="15_Joint_Shoulder_Pitch_Left">
+      <command_interface name="position"><param name="initial_value">-0.8</param></command_interface>
+      <state_interface name="position"><param name="initial_value">-0.8</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="16_Joint_Shoulder_Roll_Left">
+      <command_interface name="position"><param name="initial_value">0.8</param></command_interface>
+      <state_interface name="position"><param name="initial_value">0.8</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="17_Joint_Shoulder_Yaw_Left">
+      <command_interface name="position"><param name="initial_value">0.0</param></command_interface>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="18_Joint_Elbow_Pitch_Left">
+      <command_interface name="position"><param name="initial_value">-1.5</param></command_interface>
+      <state_interface name="position"><param name="initial_value">-1.5</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="19_Joint_Wrist_Yaw_Left">
+      <command_interface name="position"><param name="initial_value">0.0</param></command_interface>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="20_Joint_Wrist_Roll_Left">
+      <command_interface name="position"><param name="initial_value">0.0</param></command_interface>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="21_Joint_Wrist_Pitch_Left">
+      <command_interface name="position"><param name="initial_value">0.0</param></command_interface>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="22_Joint_Shoulder_Pitch_Right">
+      <command_interface name="position"><param name="initial_value">-0.8</param></command_interface>
+      <state_interface name="position"><param name="initial_value">-0.8</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="23_Joint_Shoulder_Roll_Right">
+      <command_interface name="position"><param name="initial_value">-0.8</param></command_interface>
+      <state_interface name="position"><param name="initial_value">-0.8</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="24_Joint_Shoulder_Yaw_Right">
+      <command_interface name="position"><param name="initial_value">0.0</param></command_interface>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="25_Joint_Elbow_Pitch_Right">
+      <command_interface name="position"><param name="initial_value">-1.5</param></command_interface>
+      <state_interface name="position"><param name="initial_value">-1.5</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="26_Joint_Wrist_Yaw_Right">
+      <command_interface name="position"><param name="initial_value">0.0</param></command_interface>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="27_Joint_Wrist_Roll_Right">
+      <command_interface name="position"><param name="initial_value">0.0</param></command_interface>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="28_Joint_Wrist_Pitch_Right">
+      <command_interface name="position"><param name="initial_value">0.0</param></command_interface>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="29_Joint_Neck_Yaw">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="30_Joint_Neck_Pitch">
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
 </robot>

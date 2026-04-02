@@ -10,13 +10,14 @@ find_package(ament_cmake REQUIRED)
 set(igris_sdk_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../Igris/Igris/igris_c_sdk_public/lib/cmake/igris_sdk")
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(control_msgs REQUIRED)
 find_package(igris_sdk REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
 add_executable(igris src/igris.cpp)
-ament_target_dependencies(igris rclcpp sensor_msgs)
+ament_target_dependencies(igris rclcpp sensor_msgs control_msgs)
 
 target_link_libraries(
   igris

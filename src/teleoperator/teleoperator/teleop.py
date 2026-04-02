@@ -50,41 +50,47 @@ import math
 # ]
 
 robot_params = [
-    {"name": "Waist_Yaw",           "ID": 0,   "Publish": 0, "dir": 1},
-    {"name": "Waist_Roll",          "ID": 1,   "Publish": 0, "dir": 1},
-    {"name": "Waist_Pitch",         "ID": 2,   "Publish": 0, "dir": 1},
-    {"name": "Hip_Pitch_L",         "ID": 3,   "Publish": 0, "dir": 1},
-    {"name": "Hip_Roll_L",          "ID": 4,   "Publish": 0, "dir": 1},
-    {"name": "Hip_Yaw_L",           "ID": 5,   "Publish": 0, "dir": 1},
-    {"name": "Knee_Pitch_L",        "ID": 6,   "Publish": 0, "dir": 1},
-    {"name": "Ankle_Pitch_L",       "ID": 7,   "Publish": 0, "dir": 1},
-    {"name": "Ankle_Roll_L",        "ID": 8,   "Publish": 0, "dir": 1},
-    {"name": "Hip_Pitch_R",         "ID": 9,   "Publish": 0, "dir": 1},
-    {"name": "Hip_Roll_R",          "ID": 10,  "Publish": 0, "dir": 1},
-    {"name": "Hip_Yaw_R",           "ID": 11,  "Publish": 0, "dir": 1},
-    {"name": "Knee_Pitch_R",        "ID": 12,  "Publish": 0, "dir": 1},
-    {"name": "Ankle_Pitch_R",       "ID": 13,  "Publish": 0, "dir": 1},
-    {"name": "Ankle_Roll_R",        "ID": 14,  "Publish": 0, "dir": 1},
-    {"name": "Shoulder_Pitch_L",    "ID": 15,  "Publish": 1, "dir": -1},
-    {"name": "Shoulder_Roll_L",     "ID": 16,  "Publish": 1, "dir": -1},
-    {"name": "Shoulder_Yaw_L",      "ID": 17,  "Publish": 1, "dir": 1},
-    {"name": "Elbow_Pitch_L",       "ID": 18,  "Publish": 1, "dir": -1},
-    {"name": "Wrist_Yaw_L",         "ID": 19,  "Publish": 1, "dir": 1},
-    {"name": "Wrist_Roll_L",        "ID": 20,  "Publish": 1, "dir": 1},
-    {"name": "Wrist_Pitch_L",       "ID": 21,  "Publish": 1, "dir": 1},
-    {"name": "Shoulder_Pitch_R",    "ID": 22,  "Publish": 1, "dir": 1},
-    {"name": "Shoulder_Roll_R",     "ID": 23,  "Publish": 1, "dir": -1},
-    {"name": "Shoulder_Yaw_R",      "ID": 24,  "Publish": 1, "dir": 1},
-    {"name": "Elbow_Pitch_R",       "ID": 25,  "Publish": 1, "dir": 1},
-    {"name": "Wrist_Yaw_R",         "ID": 26,  "Publish": 1, "dir": 1},
-    {"name": "Wrist_Roll_R",        "ID": 27,  "Publish": 1, "dir": 1},
-    {"name": "Wrist_Pitch_R",       "ID": 28,  "Publish": 1, "dir": 1},
-    {"name": "Neck_Yaw",            "ID": 29,  "Publish": 0, "dir": 1},
-    {"name": "Neck_Pitch",          "ID": 30,  "Publish": 0, "dir": 1},
-    {"name": "Fing_th_L",           "ID": 31,  "Publish": 1, "dir": -1},
-    {"name": "Fing_all_L",           "ID": 32,  "Publish": 1, "dir": 1},
-    {"name": "Fing_th_R",           "ID": 33,  "Publish": 1, "dir": 1},
-    {"name": "Fing_all_R",           "ID": 34,  "Publish": 1, "dir": -1},
+    {"name": "Joint_Waist_Yaw",           "ID": 0,   "Publish": 0, "dir": 1},
+    {"name": "Joint_Waist_Roll",          "ID": 1,   "Publish": 0, "dir": 1},
+    {"name": "Joint_Waist_Pitch",         "ID": 2,   "Publish": 0, "dir": 1},
+
+    {"name": "Joint_Hip_Pitch_Left",         "ID": 3,   "Publish": 0, "dir": 1},
+    {"name": "Joint_Hip_Roll_Left",          "ID": 4,   "Publish": 0, "dir": 1},
+    {"name": "Joint_Hip_Yaw_Left",           "ID": 5,   "Publish": 0, "dir": 1},
+    {"name": "Joint_Knee_Pitch_Left",        "ID": 6,   "Publish": 0, "dir": 1},
+    {"name": "Joint_Ankle_Pitch_Left",       "ID": 7,   "Publish": 0, "dir": 1},
+    {"name": "Joint_Ankle_Roll_Left",        "ID": 8,   "Publish": 0, "dir": 1},
+
+    {"name": "Joint_Hip_Pitch_Right",         "ID": 9,   "Publish": 0, "dir": 1},
+    {"name": "Joint_Hip_Roll_Right",          "ID": 10,  "Publish": 0, "dir": 1},
+    {"name": "Joint_Hip_Yaw_Right",           "ID": 11,  "Publish": 0, "dir": 1},
+    {"name": "Joint_Knee_Pitch_Right",        "ID": 12,  "Publish": 0, "dir": 1},
+    {"name": "Joint_Ankle_Pitch_Right",       "ID": 13,  "Publish": 0, "dir": 1},
+    {"name": "Joint_Ankle_Roll_Right",        "ID": 14,  "Publish": 0, "dir": 1},
+
+    {"name": "Joint_Shoulder_Pitch_Left",    "ID": 21,  "Publish": 1, "dir": 1},
+    {"name": "Joint_Shoulder_Roll_Left",     "ID": 22,  "Publish": 1, "dir": 1},
+    {"name": "Joint_Shoulder_Yaw_Left",      "ID": 23,  "Publish": 1, "dir": -1},
+    {"name": "Joint_Elbow_Pitch_Left",       "ID": 24,  "Publish": 1, "dir": 1},
+    {"name": "Joint_Wrist_Yaw_Left",         "ID": 25,  "Publish": 1, "dir": -1},
+    {"name": "Joint_Wrist_Roll_Left",        "ID": 26,  "Publish": 1, "dir": -1},
+    {"name": "Joint_Wrist_Pitch_Left",       "ID": 27,  "Publish": 1, "dir": 1},
+
+    {"name": "Joint_Shoulder_Pitch_Right",    "ID": 11,  "Publish": 1, "dir": -1},
+    {"name": "Joint_Shoulder_Roll_Right",     "ID": 12,  "Publish": 1, "dir": 1},
+    {"name": "Joint_Shoulder_Yaw_Right",      "ID": 13,  "Publish": 1, "dir": -1},
+    {"name": "Joint_Elbow_Pitch_Right",       "ID": 14,  "Publish": 1, "dir":-1},
+    {"name": "Joint_Wrist_Yaw_Right",         "ID": 15,  "Publish": 1, "dir": -1},
+    {"name": "Joint_Wrist_Roll_Right",        "ID": 16,  "Publish": 1, "dir": -1},
+    {"name": "Joint_Wrist_Pitch_Right",       "ID": 17,  "Publish": 1, "dir": 1},
+
+    {"name": "Joint_Neck_Yaw",            "ID": 29,  "Publish": 0, "dir": 1},
+    {"name": "Joint_Neck_Pitch",          "ID": 30,  "Publish": 0, "dir": 1},
+    
+    {"name": "Fing_th_L",           "ID": 28,  "Publish": 1, "dir": 1},
+    {"name": "Fing_all_L",          "ID": 29,  "Publish": 1, "dir": -1},
+    {"name": "Fing_th_R",           "ID": 18,  "Publish": 1, "dir": -1},
+    {"name": "Fing_all_R",          "ID": 19,  "Publish": 1, "dir": 1},
 ]
 
 # Dynamixel Address (X-Series)
@@ -101,7 +107,7 @@ LEN_PRESENT_POSITION    = 4
 
 PROTOCOL_VERSION = 2.0
 DEVICENAME = '/dev/ttyUSB0'
-BAUDRATE = 3000000
+BAUDRATE = 1000000
 # BAUDRATE = 4000000
 
 POSITION_CENTER = 2048
@@ -176,7 +182,8 @@ class RobotController(Node):
         self.initialize_robot()
         
         # 2. Publisher
-        self.publisher_ = self.create_publisher(JointState, '/igris/target_joint_states', 10)
+        self.publisher_ = self.create_publisher(JointState, '/masterarm/joint_states', 10)
+        self.publisher_hand = self.create_publisher(JointState, '/igris/hand/joint_states', 10)
         
         # 3. Subscriber - IGRIS 로봇 상태 구독
         self.igris_subscriber = self.create_subscription(
@@ -193,6 +200,7 @@ class RobotController(Node):
         
         # 5. Timer (Publish)
         self.timer = self.create_timer(0.01, self.timer_callback)
+        self.timer_hand = self.create_timer(0.01, self.timer_hand_callback)
         
         self.get_logger().info('Robot Controller Started!')
 
@@ -370,6 +378,7 @@ class RobotController(Node):
                 if dxl_comm_result == COMM_SUCCESS:
                     new_positions = {}
                     
+                    st = time.time()
                     for mid in self.publish_motor_ids:
                         # ===== 데이터 가용성 확인 =====
                         if not self.groupSyncRead.isAvailable(mid, ADDR_PRESENT_POSITION, LEN_PRESENT_POSITION):
@@ -409,7 +418,8 @@ class RobotController(Node):
                             new_positions[mid] = prev_value  # 이전 값 유지
                         else:
                             new_positions[mid] = rad_value
-                    
+                    end = time.time()
+                    print(f"Read loop time: {end - st:.6f} sec")
                     # 업데이트
                     self.previous_positions = new_positions.copy()
                     self.current_positions = new_positions
@@ -509,6 +519,19 @@ class RobotController(Node):
         ]
         
         self.publisher_.publish(msg)
+
+    def timer_hand_callback(self):
+        msg = JointState()
+        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.name = [j["name"] for j in self.publish_joints]
+        
+        # 발행할 때만 dir 적용! (논리적 변환)
+        msg.position = [
+            self.current_positions.get(j["ID"], 0.0) * j["dir"] 
+            for j in self.publish_joints
+        ]
+        
+        self.publisher_hand.publish(msg)
 
     def __del__(self):
         self.read_thread_running = False

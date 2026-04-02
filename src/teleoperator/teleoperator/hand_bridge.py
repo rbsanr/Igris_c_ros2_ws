@@ -2,58 +2,76 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
-from std_msgs.msg import Float32MultiArray
+from std_msgs.msg import String, Float32MultiArray
 import threading
+import json
 
-class FingerToHandBridge(Node):
+class UnifiedHandBridge(Node):
     def __init__(self):
-        super().__init__('finger_to_hand_bridge')
+        super().__init__('unified_hand_bridge')
         
-        # 손가락 상태 저장 (0.0~1.0)
+        # ==========================================
+        # 1. Teleop 파트 초기화 (JointState -> Float32MultiArray)
+        # ==========================================
         self.finger_lock = threading.Lock()
         
-        # 기존 변수들
-        self.fing_all_L = 0.0   # ID: 31
-        self.fing_th_L = 0.0    # ID: 32
-        self.fing_all_R = 0.0   # ID: 33
-        self.fing_th_R = 0.0    # ID: 34
-        
-        # ### 추가됨: 그리퍼 변수 초기화 ###
-        # 토픽이 들어오지 않아도 변수가 존재하도록 미리 0.0으로 선언합니다.
+        # 손가락 및 그리퍼 상태 저장 (0.0~1.0)
+        self.fing_th_L = 0.0    # ID: 28
+        self.fing_all_L = 0.0   # ID: 29
+        self.fing_th_R = 0.0    # ID: 18
+        self.fing_all_R = 0.0   # ID: 19
         self.Gripper_L = 0.0
         self.Gripper_R = 0.0
         
-        # 손가락 ID 매핑
-        self.finger_ids = {
-            'Fing_all_L': 31,
-            'Fing_th_L': 32,
-            'Fing_all_R': 33,
-            'Fing_th_R': 34
-        }
-        
-        # Subscriber: Teleop 로봇의 JointState 받기
+        # Subscriber: 마스터 암/Teleop 로봇의 JointState 받기
         self.teleop_sub = self.create_subscription(
             JointState,
-            '/igris/target_joint_states',
+            '/igris/hand/joint_states',
             self.teleop_callback,
             10
         )
         
-        # Publisher: IGRIS Hand로 전송
-        self.hand_pub = self.create_publisher(
+        # Publisher: IGRIS Hand 모터 목표값 전송
+        self.hand_target_pub = self.create_publisher(
             Float32MultiArray,
             '/igris_c/hand/targets',
             10
         )
+
+        # ==========================================
+        # 2. Hand Status 파트 초기화 (String -> JointState)
+        # ==========================================
+        # 실제 로봇 핸드의 조인트 이름으로 수정이 필요합니다.
+        self.joint_names = [
+            'Fing_all_R', 'joint_2', 'joint_3', 'joint_4', 
+            'joint_5', 'Fing_th_R', 'Fing_all_L', 'joint_8', 
+            'joint_9', 'joint_10', 'joint_11', 'Fing_th_L'
+        ]
+
+        # Subscriber: IGRIS Hand 상태 JSON String 받기
+        self.status_sub = self.create_subscription(
+            String,
+            '/igris_c/hand/status', 
+            self.status_callback,
+            10
+        )
         
-        self.get_logger().info('Finger to Hand Bridge Started!')
-        self.get_logger().info('Listening: /igris/target_joint_states')
-        self.get_logger().info('Publishing: /igris_c/hand/targets')
-    
+        # Publisher: 표준 JointState로 변환하여 발행
+        self.joint_state_pub = self.create_publisher(
+            JointState, 
+            '/igris/hand/status', 
+            10
+        )
+        
+        self.get_logger().info('Unified Finger-Hand Bridge Started!')
+        self.get_logger().info(' - Subscribing: /hand/joint_states, /igris_c/handtatus')
+        self.get_logger().info(' - Publishing : /igris_c/hand/targets, /igris_c/joint_states')
+
+    # ==========================================
+    # Teleop 파트 콜백 및 함수
+    # ==========================================
     def teleop_callback(self, msg):
         """Teleop 로봇의 손가락 값을 받아서 처리"""
-        
-        # JointState에서 손가락 값 추출
         updated = False
         
         with self.finger_lock:
@@ -73,62 +91,69 @@ class FingerToHandBridge(Node):
                 elif name == 'Fing_th_R':
                     self.fing_th_R = self.normalize_position(msg.position[i])
                     updated = True
-
                 elif name == 'Gripper_L':
-                    self.Gripper_L = self.normalize_position(msg.position[i]*-1)
+                    self.Gripper_L = self.normalize_position(msg.position[i] * -1)
                     updated = True
-                
                 elif name == 'Gripper_R':
                     self.Gripper_R = self.normalize_position(msg.position[i])
                     updated = True
         
-        # 손가락 값이 업데이트되면 Hand 토픽 발행
+        # 손가락 값이 업데이트되면 Hand 타겟 토픽 발행
         if updated:
             self.publish_hand_targets()
     
     def normalize_position(self, rad_value):
         """라디안 값을 0.0~1.0 범위로 정규화"""
-        # 일반적으로 손가락은 0(펼침) ~ 1.5 rad(완전히 쥠) 정도
-        # 여기서는 0~1 라디안을 0.0~1.0으로 매핑
         normalized = max(0.0, min(1.0, rad_value / 1.0))
         return normalized
     
     def publish_hand_targets(self):
         """12개 손 모터 목표값 발행"""
-        
         with self.finger_lock:
-            # 12개 모터 매핑:
-            # Gripper 변수가 초기화되어 있으므로, 데이터가 안 들어와도 0.0으로 발행됨
             targets = [
-                self.Gripper_R,
-                self.Gripper_R,
-                self.Gripper_R,
-                self.Gripper_R,
-                self.Gripper_R,
-                self.Gripper_R*1.5,
-
-                self.Gripper_L,
-                self.Gripper_L,
-                self.Gripper_L,
-                self.Gripper_L,
-                self.Gripper_L,
-                self.Gripper_L*1.5,
+                self.fing_all_R, self.fing_all_R, self.fing_all_R, 
+                self.fing_all_R, self.fing_all_R, self.fing_th_R,
+                self.fing_all_L, self.fing_all_L, self.fing_all_L, 
+                self.fing_all_L, self.fing_all_L, self.fing_th_L,
             ]
         
-        # Float32MultiArray 메시지 생성
         msg = Float32MultiArray()
         msg.data = [float(t) for t in targets]
-        
-        self.hand_pub.publish(msg)
-        
-        # 디버그 로그 (5초마다) - 필요시 주석 해제하거나 수정
-        # self.get_logger().debug(
-        #     f'Hand targets: L_grp={self.Gripper_L:.2f}, R_grp={self.Gripper_R:.2f}'
-        # )
+        self.hand_target_pub.publish(msg)
+
+    # ==========================================
+    # Hand Status 파트 콜백
+    # ==========================================
+    def status_callback(self, msg):
+        """JSON 형태의 String을 받아서 JointState로 변환"""
+        try:
+            raw_data = msg.data
+            
+            # 방어 코드: 문자열 앞뒤에 불필요한 포맷이 있을 경우 제거
+            if raw_data.startswith("data: '"):
+                raw_data = raw_data[7:-1] 
+
+            parsed_data = json.loads(raw_data)
+            
+            if 'targets' in parsed_data:
+                targets = parsed_data['targets']
+                
+                joint_state_msg = JointState()
+                joint_state_msg.header.stamp = self.get_clock().now().to_msg()
+                joint_state_msg.name = self.joint_names
+                joint_state_msg.position = [float(val) for val in targets]
+                
+                self.joint_state_pub.publish(joint_state_msg)
+                
+        except json.JSONDecodeError:
+            self.get_logger().error(f'JSON 파싱 에러 발생. 수신된 데이터: {msg.data}')
+        except Exception as e:
+            self.get_logger().error(f'예기치 않은 에러 발생: {e}')
+
 
 def main(args=None):
     rclpy.init(args=args)
-    node = FingerToHandBridge()
+    node = UnifiedHandBridge()
     
     try:
         rclpy.spin(node)

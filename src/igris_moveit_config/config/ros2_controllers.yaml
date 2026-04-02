@@ -1,0 +1,114 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    waist_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    left_leg_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    right_leg_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    left_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    right_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    head_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+waist_controller:
+  ros__parameters:
+    joints:
+      - 0_Joint_Waist_Yaw
+      - 1_Joint_Waist_Roll
+      - 2_Joint_Waist_Pitch
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    allow_nonzero_velocity_at_trajectory_end: false
+
+left_leg_controller:
+  ros__parameters:
+    joints:
+      - 3_Joint_Hip_Pitch_Left
+      - 4_Joint_Hip_Roll_Left
+      - 5_Joint_Hip_Yaw_Left
+      - 6_Joint_Knee_Pitch_Left
+      - 7_Joint_Ankle_Pitch_Left
+      - 8_Joint_Ankle_Roll_Left
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    allow_nonzero_velocity_at_trajectory_end: false
+
+right_leg_controller:
+  ros__parameters:
+    joints:
+      - 9_Joint_Hip_Pitch_Right
+      - 10_Joint_Hip_Roll_Right
+      - 11_Joint_Hip_Yaw_Right
+      - 12_Joint_Knee_Pitch_Right
+      - 13_Joint_Ankle_Pitch_Right
+      - 14_Joint_Ankle_Roll_Right
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    allow_nonzero_velocity_at_trajectory_end: false
+
+left_arm_controller:
+  ros__parameters:
+    joints:
+      - 15_Joint_Shoulder_Pitch_Left
+      - 16_Joint_Shoulder_Roll_Left
+      - 17_Joint_Shoulder_Yaw_Left
+      - 18_Joint_Elbow_Pitch_Left
+      - 19_Joint_Wrist_Yaw_Left
+      - 20_Joint_Wrist_Roll_Left
+      - 21_Joint_Wrist_Pitch_Left
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+    allow_nonzero_velocity_at_trajectory_end: false
+
+right_arm_controller:
+  ros__parameters:
+    joints:
+      - 22_Joint_Shoulder_Pitch_Right
+      - 23_Joint_Shoulder_Roll_Right
+      - 24_Joint_Shoulder_Yaw_Right
+      - 25_Joint_Elbow_Pitch_Right
+      - 26_Joint_Wrist_Yaw_Right
+      - 27_Joint_Wrist_Roll_Right
+      - 28_Joint_Wrist_Pitch_Right
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+    allow_nonzero_velocity_at_trajectory_end: false
+
+head_controller:
+  ros__parameters:
+    joints:
+      - 29_Joint_Neck_Yaw
+      - 30_Joint_Neck_Pitch
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    allow_nonzero_velocity_at_trajectory_end: false

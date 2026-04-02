@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: urdf_igris
+    relative_path: urdf/igris_c_v2.urdf
+  srdf:
+    relative_path: config/IGRIS_C.srdf
+  package_settings:
+    author_name: josh
+    author_email: rbsanr91@gmail.com
+    generated_timestamp: 1774318813
