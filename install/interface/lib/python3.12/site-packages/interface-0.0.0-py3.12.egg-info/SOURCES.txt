@@ -1,8 +1,0 @@
-setup.py
-interface/__init__.py
-interface.egg-info/PKG-INFO
-interface.egg-info/SOURCES.txt
-interface.egg-info/dependency_links.txt
-interface.egg-info/top_level.txt
-interface/srv/__init__.py
-interface/srv/_move_joints.py

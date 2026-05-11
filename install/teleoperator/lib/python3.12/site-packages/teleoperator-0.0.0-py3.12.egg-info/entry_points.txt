@@ -1,3 +1,0 @@
-[console_scripts]
-hand_bridge = teleoperator.hand_bridge:main
-joint = teleoperator.teleop:main
