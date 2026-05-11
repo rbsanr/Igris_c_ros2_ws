@@ -1,0 +1,9 @@
+[submodule "src/DynamixelSDK"]
+	path = src/DynamixelSDK
+	url = https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+[submodule "src/igris_c_hand_public"]
+	path = src/igris_c_hand_public
+	url = https://github.com/robrosinc/igris_c_hand_public.git
+[submodule "src/igris_c_masteram"]
+	path = src/igris_c_masteram
+	url = https://github.com/robrosinc/igris_c_masteram.git
