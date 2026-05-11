@@ -3,7 +3,6 @@ install/
 log/
 robot_dataset/
 src/camera.zip
-src/Igris/Igris/igris_c_sdk_public/
 *.pyc
 __pycache__/
 log.txt

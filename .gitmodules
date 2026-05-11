@@ -7,3 +7,6 @@
 [submodule "src/igris_c_masteram"]
 	path = src/igris_c_masteram
 	url = https://github.com/robrosinc/igris_c_masteram.git
+[submodule "src/Igris/Igris/igris_c_sdk_public"]
+	path = src/Igris/Igris/igris_c_sdk_public
+	url = https://github.com/robrosinc/igris_c_sdk_public.git
